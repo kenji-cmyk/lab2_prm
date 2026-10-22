@@ -23,6 +23,8 @@ REQUIRED = [
     'assets/figma/README.md', 'assets/figma/manifest.json', 'design/figma-audit.json',
     'docs/submission-review.md', 'docs/requirements/README.md',
     'docs/requirements/summary.md', 'docs/reviews/figma-metadata-2026-10-22.json',
+    'docs/reviews/current-fix-review.md', 'docs/reviews/browser-check.md',
+    'docs/reviews/accessibility-audit.json', 'tools/figma/README.md',
     'archive/prototype-html/README.md', 'presentation/demo-script.md',
 ]
 
@@ -97,7 +99,8 @@ def check_images():
     entries = manifest['entries']
     names = [entry['file'] for entry in entries]
     check(len(names) == len(set(names)), 'Duplicate PNG manifest entry')
-    actual = {path.name for path in (ROOT / 'assets/figma').glob('*.png')}
+    image_root = ROOT / 'assets/figma'
+    actual = {path.relative_to(image_root).as_posix() for path in image_root.rglob('*.png')}
     check(set(names) == actual, 'PNG files and manifest differ')
     for entry in entries:
         data = (ROOT / 'assets/figma' / entry['file']).read_bytes()
@@ -119,6 +122,30 @@ def check_snapshot():
     manifest = read_json('assets/figma/manifest.json')
     check(audit['fileKey'] == manifest['fileKey'], 'Figma file keys differ')
     check([p['name'] for p in audit['pages']] == PAGES, 'Wrong Figma pages/order')
+    wireframes = audit['pages'][1]['frames']
+    check(len(wireframes) == 11, 'Expected one set of eleven wireframes')
+    for i, first in enumerate(wireframes):
+        for second in wireframes[i + 1:]:
+            overlap = (first['x'] < second['x'] + second['width']
+                       and second['x'] < first['x'] + first['width']
+                       and first['y'] < second['y'] + second['height']
+                       and second['y'] < first['y'] + first['height'])
+            check(not overlap, f"Overlapping wireframes: {first['id']}, {second['id']}")
+    starts = audit.get('flowStartingPoints', [])
+    check({s['nodeId'] for s in starts} == {'13:373', '13:378', '13:383'},
+          'Expected three native flow starting points')
+    required_states = {
+        'Button': {'Default', 'Pressed', 'Disabled', 'Loading'},
+        'Text Field': {'Default', 'Focused', 'Filled', 'Error', 'Disabled'},
+        'Card': {'Default', 'Selected', 'Pressed'},
+        'Dialog': {'Open', 'Confirmed', 'Destructive'},
+    }
+    for name, required in required_states.items():
+        component = next(c for c in audit['components'] if c['name'] == name)
+        states = {v['name'].removeprefix('State=') for v in component['variants']}
+        check(required <= states, f'Missing component states in {name}: {required - states}')
+        check(all(v.get('layoutMode') in {'HORIZONTAL', 'VERTICAL'}
+                  for v in component['variants']), f'No Auto Layout in {name}')
     ids = {frame['id'] for p in audit['pages'] for frame in p['frames']}
     check(all(e['nodeId'] in ids or e['nodeId'] in {p['id'] for p in audit['pages']}
               for e in manifest['entries']), 'Export node missing from snapshot')
@@ -153,28 +180,51 @@ def check_snapshot():
           'No close-overlay action in snapshot')
     check(any(r['sourceScreen']['id'] == '13:476'
               and r['trigger']['type'] == 'AFTER_TIMEOUT'
+              and abs(r['trigger']['timeout'] - 1.3) < 0.01
               and r['action'].get('destinationId') == '13:485' for r in reactions),
-          'No loading-to-result timeout in snapshot')
-    print(f'PASS snapshot: 6 pages, {len(reactions)} reactions, 3 main paths, retry/overlay/timer')
+          'Loading timer differs from the configuration verified in Present')
+    print(f'PASS snapshot: 6 pages, 11 wireframes, required states/Auto Layout, 3 native starts,')
+    print(f'     {len(reactions)} reactions, 3 main paths and retry/overlay/timer')
     print('NOTE snapshot validation is static; it does not test Figma Present or public access.')
 
 
-def print_open_items():
-    metadata = read_json('docs/reviews/figma-metadata-2026-10-22.json')
-    wireframes = metadata['pages'][0]['frames']
-    print(f'OPEN latest metadata: {len(wireframes)} wireframes; overlapping sets need review.')
+def check_accessibility():
+    reports = read_json('docs/reviews/accessibility-audit.json')
     audit = read_json('design/figma-audit.json')
-    requirements = {'Button': {'Default', 'Pressed', 'Disabled', 'Loading'},
-                    'Text Field': {'Default', 'Focused', 'Filled', 'Error', 'Disabled'}}
-    for name, required in requirements.items():
-        component = next(c for c in audit['components'] if c['name'] == name)
-        states = {v['name'].removeprefix('State=') for v in component['variants']}
-        missing = sorted(required - states)
-        if missing:
-            print(f"OPEN component {name}: missing {', '.join(missing)} in snapshot.")
-    print('OPEN submission: Stitch output, 3 iterations, full AI critique/decisions,')
-    print('     component states, prototype wiring/starting points, accessibility,')
-    print('     public Figma access, handoff details and teacher-approved repository name.')
+    check({r['page'] for r in reports} == {'03 Final UI', '06 Prototype'},
+          'Missing accessibility page report')
+    check(len(reports) == 2, 'Duplicate accessibility page report')
+    for report in reports:
+        page = next(p for p in audit['pages'] if p['name'] == report['page'])
+        expected = {f['id']: (f['width'], f['height']) for f in page['frames']
+                    if f['width'] in {360, 412}}
+        screens = report['screens']
+        check(len(screens) == len({s['id'] for s in screens}),
+              f"Duplicate accessibility screen: {report['page']}")
+        actual = {s['id']: (s['width'], s['height']) for s in screens}
+        check(actual == expected, f"Incomplete accessibility coverage: {report['page']}")
+        for screen in report['screens']:
+            check(not screen['failures'], f"Accessibility failures: {screen['id']}")
+            check(screen['minFontSize'] >= 14, f"Small text: {screen['id']}")
+            check(screen['minTextContrast'] >= 4.5, f"Low text contrast: {screen['id']}")
+            check(screen['fontFamilies'] == ['Roboto'], f"Unexpected font: {screen['id']}")
+            check(all(b['contrast'] >= 3 for b in screen['controlBorders']),
+                  f"Low control contrast: {screen['id']}")
+            check(all(t['width'] >= 48 and t['height'] >= 48 for t in screen['clickTargets']),
+                  f"Small touch target: {screen['id']}")
+    proto = next(r for r in reports if r['page'] == '06 Prototype')
+    check(sum(s['width'] == 412 for s in proto['screens']) == 11,
+          'Expected 412dp evidence for all eleven screens')
+    final = next(r for r in reports if r['page'] == '03 Final UI')
+    print(f"PASS accessibility evidence: {len(final['screens'])} Final UI and "
+          f"{len(proto['screens'])} Prototype/responsive frames,")
+    print('     text >=14, contrast >=4.5, measured borders >=3 and click targets >=48')
+
+
+def print_open_items():
+    print('QA evidence: docs/reviews/browser-check.md records actual Present/anonymous checks.')
+    print('OPEN: public editor access (CloudFront blocks verification here), lecturer approval')
+    print('     of Codex + Figma MCP substitution, repository naming/group approval, classmate handoff.')
     print('See docs/submission-review.md. Repository PASS does not mean rubric complete.')
 
 
@@ -184,6 +234,7 @@ def main():
         check_links()
         check_images()
         check_snapshot()
+        check_accessibility()
         print_open_items()
     except (ValueError, KeyError, OSError, StopIteration, struct.error) as error:
         print(f'FAIL: {error}', file=sys.stderr)

@@ -1,24 +1,20 @@
 # Sáu trang Figma — Nếp Lành
 
-[File Figma](https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q).
+[File thiết kế](https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q), cập nhật sau sửa ngày 22/10/2026.
 
 | Thứ tự | Trang | Nội dung hiện tại |
 | --- | --- | --- |
-| 1 | 01 User Flow | Persona Minh, vấn đề và ba flow card; Mermaid chi tiết trong ux/user-flow.md. |
-| 2 | 02 Wireframe | Metadata mới có 22 frame: bộ 12:* và bộ grayscale 52:* dựng hồi cứu ngày 22/10/2026 đang đặt chồng; cần chọn/sắp xếp một bộ chính. Không chứng minh thứ tự trước AI generation. |
-| 3 | 03 Final UI | S01–S11 ở 360 × 800; 8 màn chức năng, 3 trạng thái S05/S07/S09; overlay xác nhận hủy. |
-| 4 | 04 Design System | 14 màu, typography Roboto, spacing, radius, elevation. Variable/binding được lưu trong audit JSON. |
-| 5 | 05 Components | 9 nhóm bắt buộc và Navigation Icons, dùng Auto Layout và variants. |
-| 6 | 06 Prototype | Ba flow, overlay hủy, loading → result, lỗi/retry; thêm trang chủ 412 px. |
+| 1 | 01 User Flow | Persona Minh, vấn đề, ba flow cards; sơ đồ/mapping chi tiết trong user-flow.md. |
+| 2 | 02 Wireframe | 11 frame bộ 52:* trên grid ba cột, không chồng; bộ trùng 12:* đã xóa. Có note nguồn hồi cứu từ Final UI. |
+| 3 | 03 Final UI | 8 màn chức năng + 3 trạng thái ở 360 × 800 và overlay xác nhận hủy. |
+| 4 | 04 Design System | Light theme, Roboto, color/type/spacing/radius/elevation. Audit có 25 variables, 7 Text Styles, 1 Effect Style. |
+| 5 | 05 Components | 9 nhóm bắt buộc và Navigation Icons; thêm states thiếu, khu review dùng instances tại 66:77. |
+| 6 | 06 Prototype | 3 native flow starts, goal alternatives, lỗi/retry, overlay, loading→result, 11 khung 412 dp và ghi chú handoff. |
 
-## Mapping
+## Điểm bắt đầu đã chạy
 
-S01 Chào mừng; S02 Thiết lập mục tiêu; S03 Trang chủ; S04 Ghi bữa ăn; S05 Đang phân tích; S06 Kết quả; S07 Lỗi kết nối; S08 Nhật ký bữa ăn; S09 Nhật ký trống; S10 Tiến trình tuần; S11 Bài học nhỏ.
+- [Flow 1 — Bắt đầu](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-373&starting-point-node-id=13%3A373)
+- [Flow 2 — Ghi bữa ăn](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-378&starting-point-node-id=13%3A378)
+- [Flow 3 — Theo dõi và học](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-383&starting-point-node-id=13%3A383)
 
-Đối chiếu node ID với [screen-spec.md](screen-spec.md) và [manifest ảnh](../assets/figma/manifest.json). Overlay không tính vào tám màn chức năng.
-
-## Cần xác minh ngoài file
-
-- Mở link bằng tài khoản khác để xác nhận quyền xem; Playwright trước gặp HTTP 403.
-- Chạy ba flow bằng Present để kiểm tra Back, overlay, timer và retry thực tế.
-- Bổ sung bằng chứng Google Stitch nguyên bản; không dùng wireframe hồi cứu hoặc PNG Figma làm ảnh Stitch.
+[QA trực tiếp](../docs/reviews/browser-check.md) xác nhận ba flow/15 inactive tabs; [manifest](../assets/figma/manifest.json) ghi node ảnh. Present công khai đạt; editor công khai chưa xác minh do CloudFront 403 trong môi trường. Xem [review hiện tại](../docs/reviews/current-fix-review.md).

@@ -1,7 +1,7 @@
 {
   "fileKey": "Cc2O3xSmxgjfvDI2hrsY3Q",
   "reviewDate": "2026-10-22",
-  "source": "Actual Figma MCP rendered exports; not Stitch output",
+  "source": "Actual Figma MCP rendered exports after component/prototype/accessibility repairs; Codex + Figma MCP, no Stitch",
   "entries": [
     {
       "file": "01-chao-mung.png",
@@ -17,8 +17,8 @@
       "file": "02-thiet-lap-muc-tieu.png",
       "width": 360,
       "height": 800,
-      "bytes": 44274,
-      "sha256": "2b4b34c71677b6adfbde1a55040e67ceec733e53aec733f51ef09ebd495eb3fb",
+      "bytes": 44842,
+      "sha256": "baa81f0f22a131f4c36c9c5a5acd668bc6d145f516ad482f76d41a5f626678af",
       "nodeId": "6:19",
       "role": "functional",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=6-19"
@@ -27,8 +27,8 @@
       "file": "03-trang-chu.png",
       "width": 360,
       "height": 800,
-      "bytes": 37758,
-      "sha256": "0f17b1309a5eec013bbe87d6fe3c698edb4eba3761fddc61bf7457244da0ceb3",
+      "bytes": 37842,
+      "sha256": "a1ae0aeaaf89646bcb997e23cd1ea7dcec218f039a359f17a730495f635bfafd",
       "nodeId": "6:42",
       "role": "functional",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=6-42"
@@ -37,8 +37,8 @@
       "file": "04-ghi-bua-an.png",
       "width": 360,
       "height": 800,
-      "bytes": 39399,
-      "sha256": "4ae16b74de5e0fd3b3d41f685a0a5112f6cb515b57c0fbe43dfaaef3ac029912",
+      "bytes": 39338,
+      "sha256": "4285dbfb6902fcdc0896807e9355feeb7db357a5fc88e86bc1ba28ea9f842b0b",
       "nodeId": "6:76",
       "role": "functional",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=6-76"
@@ -47,8 +47,8 @@
       "file": "05-dang-phan-tich.png",
       "width": 360,
       "height": 800,
-      "bytes": 26782,
-      "sha256": "47c4e4616556f1082ac8be981e9943e93e33674aaefb4235ceaca870c5316770",
+      "bytes": 27774,
+      "sha256": "49a3c83c9da66503f15db72a2de3575177cbf9672f360b502ebd8ee62be88a87",
       "nodeId": "6:101",
       "role": "state",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=6-101"
@@ -67,8 +67,8 @@
       "file": "07-loi-ket-noi.png",
       "width": 360,
       "height": 800,
-      "bytes": 23843,
-      "sha256": "9d7ea4b78c7d6482edbb8739ad6b3d52cde85e216ba7782aa038eb43b032be05",
+      "bytes": 23983,
+      "sha256": "6e39c50495f75f0043c5a5b416447524fa57c9969f4b85295b407328aa39cd33",
       "nodeId": "6:138",
       "role": "state",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=6-138"
@@ -77,8 +77,8 @@
       "file": "08-nhat-ky-bua-an.png",
       "width": 360,
       "height": 800,
-      "bytes": 40206,
-      "sha256": "ba7d6e8e003934c489635e2074ba86965a835c9f7490bfeb60295c2680f6106f",
+      "bytes": 42567,
+      "sha256": "be168a10830a0a0a70c4d55042d27043285b1ea9f09e4a90ad7f3d4b993890bd",
       "nodeId": "6:155",
       "role": "functional",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=6-155"
@@ -87,8 +87,8 @@
       "file": "09-nhat-ky-trong.png",
       "width": 360,
       "height": 800,
-      "bytes": 21117,
-      "sha256": "8b69aed40f0699b0991c04bb8fcc6e09a9c4515ae8ba6221a0d374033a26866c",
+      "bytes": 22546,
+      "sha256": "ff7d9ecb89a33a3be5c6f071857b45cd856f6394051f6e660b8c6ee862dac6d5",
       "nodeId": "6:186",
       "role": "state",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=6-186"
@@ -97,8 +97,8 @@
       "file": "10-tien-trinh-tuan.png",
       "width": 360,
       "height": 800,
-      "bytes": 35358,
-      "sha256": "5d01f7fe01ee7c661e52bbd6d64d9fc56c9d65f1088c1ab98cf11ba757e1c269",
+      "bytes": 38764,
+      "sha256": "c88961d146830ba21248100d41203a81f588158a1ff096803cb54d3e5b289caa",
       "nodeId": "6:213",
       "role": "functional",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=6-213"
@@ -107,8 +107,8 @@
       "file": "11-bai-hoc-nho.png",
       "width": 360,
       "height": 800,
-      "bytes": 51840,
-      "sha256": "92b70ff6a54c34a19224f22bad0c4ad0fa61e963289d287bd7f02d1e9a7d1854",
+      "bytes": 52035,
+      "sha256": "3fb9190854cbe322c2b73e3ab3b0311205d484cc5b5c32765af1e3f76fea8145",
       "nodeId": "6:257",
       "role": "functional",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=6-257"
@@ -127,21 +127,131 @@
       "file": "13-trang-chu-412.png",
       "width": 412,
       "height": 800,
-      "bytes": 38382,
-      "sha256": "e26be90be25731a3552ab8de017f62e0a750e6070efad2a494d4d735812eb273",
+      "bytes": 38468,
+      "sha256": "e6fe82202333192a8b1f9e3ca26a1b23cd9fe2ae03081d631978c5f80ee267cd",
       "nodeId": "16:164",
       "role": "responsive",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=16-164"
     },
     {
       "file": "14-wireframe-overview.png",
-      "width": 592,
+      "width": 593,
       "height": 1800,
-      "bytes": 131378,
-      "sha256": "e419c8981f5fbe1f6ccb6fb96901c393a671f019d629dc168606739387847e05",
+      "bytes": 132514,
+      "sha256": "00f138a2fd62180385ac7514b1b251fb20a8f0717bcd88df66edee96f5bdbe51",
       "nodeId": "2:2",
       "role": "wireframe-overview",
       "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=2-2"
+    },
+    {
+      "file": "15-component-states.png",
+      "width": 736,
+      "height": 460,
+      "bytes": 41254,
+      "sha256": "b4db2d197d43bc0e3d074b2084dcdffe74daf2ebe01102601afb715dfcc84fd7",
+      "nodeId": "66:77",
+      "role": "component-review",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-77"
+    },
+    {
+      "file": "responsive/01-chao-mung-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 35091,
+      "sha256": "8831cac96653e91706b1765574739c2d4a57c6741eea3327ece04d6605467530",
+      "nodeId": "66:537",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-537"
+    },
+    {
+      "file": "responsive/02-thiet-lap-muc-tieu-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 45467,
+      "sha256": "a2efed3c9c37196046737f026d810af94456e77c78a5bb226e02ae9b747410dd",
+      "nodeId": "66:553",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-553"
+    },
+    {
+      "file": "responsive/04-ghi-bua-an-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 39915,
+      "sha256": "45f652945d6ae98a657931d622b5808bcbf0e17fb98baffb232ee972f8f580c5",
+      "nodeId": "66:577",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-577"
+    },
+    {
+      "file": "responsive/05-dang-phan-tich-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 28182,
+      "sha256": "350868f42f818cbaefbb5d2dbcc8c3dd524f88bac1d1d5caf80a7aeda625b031",
+      "nodeId": "66:603",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-603"
+    },
+    {
+      "file": "responsive/06-ket-qua-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 44257,
+      "sha256": "587e6e669e2103cc35e10fcb612d04f8cd4c658ae548fd0aabb2b02a465ced30",
+      "nodeId": "66:623",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-623"
+    },
+    {
+      "file": "responsive/07-loi-ket-noi-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 24090,
+      "sha256": "18f26e05abc2039bcd6a4535d068bbc69a88713dd3974b7b1219862808b1d775",
+      "nodeId": "66:644",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-644"
+    },
+    {
+      "file": "responsive/08-nhat-ky-bua-an-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 43406,
+      "sha256": "0642582389d96013dbeb48555c5bfea993909fd59dd07541379590e8457e4e5d",
+      "nodeId": "66:662",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-662"
+    },
+    {
+      "file": "responsive/09-nhat-ky-trong-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 22945,
+      "sha256": "3464529e7be6ec214a4fbdd8fcdd6e710ad8f8f8bee762d2772ca1927bf1f894",
+      "nodeId": "66:702",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-702"
+    },
+    {
+      "file": "responsive/10-tien-trinh-tuan-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 40559,
+      "sha256": "11d58ff56b352db3a4c19fcd6b48493ac2adc8fc02fad437021bd5e5212266f8",
+      "nodeId": "66:740",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-740"
+    },
+    {
+      "file": "responsive/11-bai-hoc-nho-412.png",
+      "width": 412,
+      "height": 800,
+      "bytes": 52392,
+      "sha256": "b7fc40431bd25b18dc133dbedefe88adf3c0f57353f8df5e15c8bff96c96eb98",
+      "nodeId": "66:792",
+      "role": "responsive",
+      "figmaUrl": "https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=66-792"
     }
   ]
 }

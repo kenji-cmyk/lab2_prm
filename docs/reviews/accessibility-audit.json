@@ -1,0 +1,1220 @@
+[
+  {
+    "page": "03 Final UI",
+    "date": "2026-10-22",
+    "method": "Visible text against nearest solid ancestor, screen bounds, visible click-target rectangles and text-field borders; screenshot and Present review recorded separately",
+    "screens": [
+      {
+        "id": "6:2",
+        "name": "01 Chào mừng",
+        "width": 360,
+        "height": 800,
+        "textCount": 9,
+        "minFontSize": 14,
+        "minTextContrast": 6.063935055811612,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:16",
+            "width": 320,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:19",
+        "name": "02 Thiết lập mục tiêu",
+        "width": 360,
+        "height": 800,
+        "textCount": 12,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:39",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "6:22",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:42",
+        "name": "03 Trang chủ",
+        "width": 360,
+        "height": 800,
+        "textCount": 16,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:73",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "6:70",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "6:67",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "6:60",
+            "width": 320,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:76",
+        "name": "04 Ghi bữa ăn",
+        "width": 360,
+        "height": 800,
+        "textCount": 14,
+        "minFontSize": 14,
+        "minTextContrast": 5.9002152388051625,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [
+          {
+            "id": "I6:89;61:82",
+            "contrast": 6.467992768698916
+          },
+          {
+            "id": "I6:84;61:82",
+            "contrast": 6.467992768698916
+          }
+        ],
+        "clickTargets": [
+          {
+            "id": "6:99",
+            "width": 320,
+            "height": 48
+          },
+          {
+            "id": "6:97",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "6:79",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:101",
+        "name": "05 Đang phân tích",
+        "width": 360,
+        "height": 800,
+        "textCount": 9,
+        "minFontSize": 14,
+        "minTextContrast": 5.9002152388051625,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:116",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "6:104",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:118",
+        "name": "06 Kết quả",
+        "width": 360,
+        "height": 800,
+        "textCount": 12,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:136",
+            "width": 320,
+            "height": 48
+          },
+          {
+            "id": "6:134",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "6:121",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:138",
+        "name": "07 Lỗi kết nối",
+        "width": 360,
+        "height": 800,
+        "textCount": 9,
+        "minFontSize": 14,
+        "minTextContrast": 5.745598910720908,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:153",
+            "width": 320,
+            "height": 48
+          },
+          {
+            "id": "6:151",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "6:141",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:155",
+        "name": "08 Nhật ký bữa ăn",
+        "width": 360,
+        "height": 800,
+        "textCount": 16,
+        "minFontSize": 14,
+        "minTextContrast": 5.9002152388051625,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:174",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "6:171",
+            "width": 320,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:186",
+        "name": "09 Nhật ký trống",
+        "width": 360,
+        "height": 800,
+        "textCount": 11,
+        "minFontSize": 14,
+        "minTextContrast": 6.293363821860913,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:198",
+            "width": 320,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:213",
+        "name": "10 Tiến trình tuần",
+        "width": 360,
+        "height": 800,
+        "textCount": 22,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:245",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "6:243",
+            "width": 320,
+            "height": 48
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "6:257",
+        "name": "11 Bài học nhỏ",
+        "width": 360,
+        "height": 800,
+        "textCount": 14,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "6:272",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "6:260",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "10:126",
+        "name": "Overlay — Xác nhận hủy bữa ăn",
+        "width": 360,
+        "height": 800,
+        "textCount": 4,
+        "minFontSize": 14,
+        "minTextContrast": 6.293363821860913,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "10:132",
+            "width": 288,
+            "height": 48
+          },
+          {
+            "id": "10:130",
+            "width": 288,
+            "height": 52
+          }
+        ],
+        "failures": []
+      }
+    ]
+  },
+  {
+    "page": "06 Prototype",
+    "date": "2026-10-22",
+    "method": "Visible text against nearest solid ancestor, screen bounds, visible click-target rectangles and text-field borders; screenshot and Present review recorded separately",
+    "screens": [
+      {
+        "id": "13:418",
+        "name": "PROTO — 01 Chào mừng",
+        "width": 360,
+        "height": 800,
+        "textCount": 9,
+        "minFontSize": 14,
+        "minTextContrast": 6.063935055811612,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:431",
+            "width": 320,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:434",
+        "name": "PROTO — 02 Thiết lập mục tiêu",
+        "width": 360,
+        "height": 800,
+        "textCount": 12,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:444",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "13:443",
+            "width": 320,
+            "height": 108
+          },
+          {
+            "id": "13:442",
+            "width": 320,
+            "height": 108
+          },
+          {
+            "id": "13:436",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:447",
+        "name": "PROTO — 03 Trang chủ",
+        "width": 360,
+        "height": 800,
+        "textCount": 16,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:463",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:462",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:461",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:458",
+            "width": 320,
+            "height": 48
+          },
+          {
+            "id": "13:457",
+            "width": 320,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:465",
+        "name": "PROTO — 04 Ghi bữa ăn",
+        "width": 360,
+        "height": 800,
+        "textCount": 14,
+        "minFontSize": 14,
+        "minTextContrast": 5.9002152388051625,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [
+          {
+            "id": "I13:470;61:82",
+            "contrast": 6.467992768698916
+          },
+          {
+            "id": "I13:469;61:82",
+            "contrast": 6.467992768698916
+          }
+        ],
+        "clickTargets": [
+          {
+            "id": "13:473",
+            "width": 320,
+            "height": 48
+          },
+          {
+            "id": "13:472",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "13:467",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:476",
+        "name": "PROTO — 05 Đang phân tích",
+        "width": 360,
+        "height": 800,
+        "textCount": 9,
+        "minFontSize": 14,
+        "minTextContrast": 5.9002152388051625,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:483",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "67:403",
+            "width": 320,
+            "height": 48
+          },
+          {
+            "id": "13:478",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:485",
+        "name": "PROTO — 06 Kết quả",
+        "width": 360,
+        "height": 800,
+        "textCount": 12,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:494",
+            "width": 320,
+            "height": 48
+          },
+          {
+            "id": "13:493",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "13:487",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:497",
+        "name": "PROTO — 07 Lỗi kết nối",
+        "width": 360,
+        "height": 800,
+        "textCount": 9,
+        "minFontSize": 14,
+        "minTextContrast": 5.745598910720908,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:504",
+            "width": 320,
+            "height": 48
+          },
+          {
+            "id": "13:503",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "13:499",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:507",
+        "name": "PROTO — 08 Nhật ký bữa ăn",
+        "width": 360,
+        "height": 800,
+        "textCount": 16,
+        "minFontSize": 14,
+        "minTextContrast": 5.9002152388051625,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:520",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:519",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:517",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "63:365",
+            "width": 320,
+            "height": 48
+          },
+          {
+            "id": "13:515",
+            "width": 320,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:522",
+        "name": "PROTO — 09 Nhật ký trống",
+        "width": 360,
+        "height": 800,
+        "textCount": 11,
+        "minFontSize": 14,
+        "minTextContrast": 6.293363821860913,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:532",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:531",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:529",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:527",
+            "width": 320,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:534",
+        "name": "PROTO — 10 Tiến trình tuần",
+        "width": 360,
+        "height": 800,
+        "textCount": 22,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:561",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:559",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:558",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:556",
+            "width": 320,
+            "height": 48
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:563",
+        "name": "PROTO — 11 Bài học nhỏ",
+        "width": 360,
+        "height": 800,
+        "textCount": 14,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:576",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:575",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:574",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "13:572",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "13:565",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "13:579",
+        "name": "PROTO — Overlay xác nhận hủy",
+        "width": 360,
+        "height": 800,
+        "textCount": 4,
+        "minFontSize": 14,
+        "minTextContrast": 6.293363821860913,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "13:584",
+            "width": 288,
+            "height": 48
+          },
+          {
+            "id": "13:583",
+            "width": 288,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "16:164",
+        "name": "RESP — 03 Trang chủ · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 16,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "16:180",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "16:179",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "16:178",
+            "width": 82,
+            "height": 68
+          },
+          {
+            "id": "16:175",
+            "width": 364,
+            "height": 48
+          },
+          {
+            "id": "16:174",
+            "width": 364,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "63:267",
+        "name": "PROTO — 02 Thiết lập mục tiêu · Lựa chọn 2",
+        "width": 360,
+        "height": 800,
+        "textCount": 12,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "63:277",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "63:276",
+            "width": 320,
+            "height": 108
+          },
+          {
+            "id": "63:274",
+            "width": 320,
+            "height": 108
+          },
+          {
+            "id": "63:269",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "63:291",
+        "name": "PROTO — 02 Thiết lập mục tiêu · Lựa chọn 3",
+        "width": 360,
+        "height": 800,
+        "textCount": 12,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "63:301",
+            "width": 320,
+            "height": 52
+          },
+          {
+            "id": "63:299",
+            "width": 320,
+            "height": 108
+          },
+          {
+            "id": "63:298",
+            "width": 320,
+            "height": 108
+          },
+          {
+            "id": "63:293",
+            "width": 320,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:537",
+        "name": "RESP — 01 Chào mừng · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 9,
+        "minFontSize": 14,
+        "minTextContrast": 6.063935055811612,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "66:539",
+            "width": 364,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:553",
+        "name": "RESP — 02 Thiết lập mục tiêu · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 12,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "66:557",
+            "width": 364,
+            "height": 52
+          },
+          {
+            "id": "66:558",
+            "width": 364,
+            "height": 108
+          },
+          {
+            "id": "66:559",
+            "width": 364,
+            "height": 108
+          },
+          {
+            "id": "66:563",
+            "width": 364,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:577",
+        "name": "RESP — 04 Ghi bữa ăn · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 14,
+        "minFontSize": 14,
+        "minTextContrast": 5.9002152388051625,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [
+          {
+            "id": "I66:582;61:82",
+            "contrast": 6.467992768698916
+          },
+          {
+            "id": "I66:583;61:82",
+            "contrast": 6.467992768698916
+          }
+        ],
+        "clickTargets": [
+          {
+            "id": "66:579",
+            "width": 364,
+            "height": 48
+          },
+          {
+            "id": "66:580",
+            "width": 364,
+            "height": 52
+          },
+          {
+            "id": "66:585",
+            "width": 364,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:603",
+        "name": "RESP — 05 Đang phân tích · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 9,
+        "minFontSize": 14,
+        "minTextContrast": 5.9002152388051625,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "66:604",
+            "width": 364,
+            "height": 52
+          },
+          {
+            "id": "70:403",
+            "width": 364,
+            "height": 48
+          },
+          {
+            "id": "66:609",
+            "width": 364,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:623",
+        "name": "RESP — 06 Kết quả · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 12,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "66:625",
+            "width": 364,
+            "height": 48
+          },
+          {
+            "id": "66:626",
+            "width": 364,
+            "height": 52
+          },
+          {
+            "id": "66:632",
+            "width": 364,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:644",
+        "name": "RESP — 07 Lỗi kết nối · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 9,
+        "minFontSize": 14,
+        "minTextContrast": 5.745598910720908,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "66:646",
+            "width": 364,
+            "height": 48
+          },
+          {
+            "id": "66:647",
+            "width": 364,
+            "height": 52
+          },
+          {
+            "id": "66:651",
+            "width": 364,
+            "height": 56
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:662",
+        "name": "RESP — 08 Nhật ký bữa ăn · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 16,
+        "minFontSize": 14,
+        "minTextContrast": 5.9002152388051625,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "66:664",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:665",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:667",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:668",
+            "width": 364,
+            "height": 48
+          },
+          {
+            "id": "66:669",
+            "width": 364,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:702",
+        "name": "RESP — 09 Nhật ký trống · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 11,
+        "minFontSize": 14,
+        "minTextContrast": 6.293363821860913,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "66:704",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:705",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:707",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:708",
+            "width": 364,
+            "height": 52
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:740",
+        "name": "RESP — 10 Tiến trình tuần · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 22,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "66:750",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:752",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:753",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:754",
+            "width": 364,
+            "height": 48
+          }
+        ],
+        "failures": []
+      },
+      {
+        "id": "66:792",
+        "name": "RESP — 11 Bài học nhỏ · 412dp",
+        "width": 412,
+        "height": 800,
+        "textCount": 14,
+        "minFontSize": 14,
+        "minTextContrast": 5.521282975797473,
+        "fontFamilies": [
+          "Roboto"
+        ],
+        "controlBorders": [],
+        "clickTargets": [
+          {
+            "id": "66:795",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:796",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:797",
+            "width": 95,
+            "height": 68
+          },
+          {
+            "id": "66:798",
+            "width": 364,
+            "height": 52
+          },
+          {
+            "id": "66:805",
+            "width": 364,
+            "height": 56
+          }
+        ],
+        "failures": []
+      }
+    ]
+  }
+]

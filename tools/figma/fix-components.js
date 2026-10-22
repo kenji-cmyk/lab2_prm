@@ -1,0 +1,19 @@
+const p=await figma.getNodeByIdAsync('2:5');await figma.setCurrentPageAsync(p);
+const mutated=[],created=[];
+const sets=await Promise.all(['4:12','4:28','4:35','4:64'].map(id=>figma.getNodeByIdAsync(id)));
+const fonts=new Map();for(const s of sets)for(const t of s.findAllWithCriteria({types:['TEXT']}))for(const seg of t.getStyledTextSegments(['fontName']))fonts.set(JSON.stringify(seg.fontName),seg.fontName);await Promise.all([...fonts.values()].map(f=>figma.loadFontAsync(f)));
+const vars=await figma.variables.getLocalVariablesAsync();const v=name=>vars.find(v=>v.name===name);
+let border=v('color/border/control');if(!border){const source=v('color/text/secondary');const col=await figma.variables.getVariableCollectionByIdAsync(source.variableCollectionId);border=figma.variables.createVariable('color/border/control',col,'COLOR');border.scopes=['STROKE_COLOR'];for(const mode of col.modes)border.setValueForMode(mode.modeId,source.valuesByMode[mode.modeId]);vars.push(border);}
+function paint(name){return figma.variables.setBoundVariableForPaint({type:'SOLID',color:{r:0,g:0,b:0}},'color',v(name));}
+function add(set,sourceId,name){let n=set.children.find(c=>c.name===name);if(!n){n=set.children.find(c=>c.id===sourceId).clone();n.name=name;set.appendChild(n);created.push(n.id,...n.findAllWithCriteria({types:['TEXT','FRAME','INSTANCE','VECTOR','ELLIPSE']}).map(c=>c.id));}return n;}
+const pressed=add(sets[0],'4:4','State=Pressed');pressed.fills=[paint('color/brand/on-primary-container')];
+const filled=add(sets[1],'4:13','State=Filled');filled.findOne(n=>n.type==='TEXT'&&n.name==='Value').characters='Đậu hũ áp chảo';filled.findOne(n=>n.type==='TEXT'&&n.name==='Helper').characters='Đã nhập tên món';
+const disabled=add(sets[1],'4:13','State=Disabled');disabled.findOne(n=>n.type==='TEXT'&&n.name==='Value').characters='Chưa thể chỉnh sửa';disabled.findOne(n=>n.type==='TEXT'&&n.name==='Helper').characters='Trường đang tạm khóa';disabled.findOne(n=>n.name==='Input container').fills=[paint('color/surface/canvas')];
+for(const s of sets[1].children){const input=s.findOne(n=>n.name==='Input container');if(s.name==='State=Default'||s.name==='State=Filled')input.strokes=[figma.variables.setBoundVariableForPaint({type:'SOLID',color:{r:0,g:0,b:0}},'color',border)];mutated.push(input.id);}
+const card=add(sets[2],'4:29','State=Pressed');card.fills=[paint('color/brand/primary-container')];card.strokeWeight=2;card.strokes=[paint('color/brand/primary')];
+const destructive=add(sets[3],'4:52','State=Destructive');for(const t of destructive.findAllWithCriteria({types:['TEXT']})){if(t.name==='Title')t.characters='Hủy ghi bữa ăn?';if(t.name==='Body')t.characters='Thông tin đang nhập sẽ bị xóa. Bạn có thể quay lại để tiếp tục.';if(t.name==='Cancel')t.characters='Quay lại';if(t.name==='Confirm'){t.characters='Hủy bữa ăn';t.fills=[paint('color/state/error')];}}
+const order=['Button','Text Field','Card','Navigation Item','App Bar','Dialog','Loading','Empty State','Error & Recovery'];
+for(let i=0;i<order.length;i++){const s=p.children.find(n=>n.type==='COMPONENT_SET'&&n.name===order[i]);s.x=24+(i%3)*400;s.y=128+Math.floor(i/3)*760;let y=16;for(const c of s.children){c.x=16;c.y=y;y+=c.height+16;mutated.push(c.id);}s.resize(352,y);mutated.push(s.id);}
+const icons=await figma.getNodeByIdAsync('25:95');icons.x=24;icons.y=2480;icons.resize(352,104);icons.children.forEach((c,i)=>{c.x=16+(i%4)*80;c.y=16+Math.floor(i/4)*40;mutated.push(c.id);});mutated.push(icons.id);
+const reference=await figma.getNodeByIdAsync('4:94');reference.x=24;reference.y=2740;mutated.push(reference.id);
+return {createdNodeIds:created,mutatedNodeIds:mutated,controlBorderVariable:{id:border.id,name:border.name},sets:sets.map(s=>({id:s.id,name:s.name,variants:s.children.map(c=>({id:c.id,name:c.name,layout:c.layoutMode}))}))};

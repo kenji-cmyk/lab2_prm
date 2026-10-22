@@ -1,8 +1,11 @@
 # Hồ sơ kiểm tra
 
-- [Kết luận và checklist theo đề gốc](../submission-review.md): trạng thái nộp bài ngày 22/10/2026.
-- [Review căn chỉnh trước đó](figma-alignment.md): kết quả lịch sử, không thay thế kiểm tra trực tiếp.
-- [Metadata đọc trực tiếp ngày 22/10/2026](figma-metadata-2026-10-22.json): frame ở Wireframe/Final UI và variants ở Components.
-- [Snapshot audit trước đó](../../design/figma-audit.json): token, component và reactions; riêng thống kê trang Wireframe đã khác metadata mới.
+- [Review sau sửa](current-fix-review.md): kết quả states/wireframe/prototype/accessibility và giới hạn còn lại.
+- [Figma Present và quyền công khai](browser-check.md): walkthrough thực tế, anonymous Present200, editor CloudFront403 chưa xác minh.
+- [Accessibility audit](accessibility-audit.json): số đo text/bounds/targets/borders ở360/412.
+- [Audit cấu trúc hiện tại](../../design/figma-audit.json):25variables,95reactions,3nativeflow starts,11wireframes.
+- [Đối chiếu đề gốc](../submission-review.md): trạng thái kỹ thuật và xác nhận ngoài phiên.
+- [Review căn chỉnh trước](figma-alignment.md): ghi nhận lịch sử.
+- [Metadata trước lượt sửa](figma-metadata-2026-10-22.json): bằng chứng baseline22wireframes/thiếustates; không phải trạng thái cuối.
 
-Metadata đọc bằng tài khoản kết nối không chứng minh quyền xem công khai. Chưa có lượt walkthrough Figma Present mới.
+Ảnh và manifest sau sửa nằm trong [assets/figma](../../assets/figma/README.md). Phân biệt cấu trúc/ảnh với thao tác Present và quyền truy cập không đăng nhập.

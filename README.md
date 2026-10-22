@@ -4,7 +4,9 @@
 
 **Thiết kế:** [Figma của Nhóm 6](https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q). Mở trang **06 Prototype**, chọn điểm bắt đầu rồi bấm Present.
 
-**Rà soát 22/10/2026: chưa đủ yêu cầu để xác nhận hoàn tất Lab.** Có 8 màn chức năng, 3 frame trạng thái, overlay và 14 PNG. Còn thiếu bằng chứng Stitch/ba vòng lặp/critique đầy đủ, một số component states và kiểm tra prototype/accessibility/quyền xem công khai. Trang Wireframe có hai bộ frame chồng nhau. Xem [bảng đối chiếu đề gốc và việc cần bổ sung](docs/submission-review.md).
+**Cập nhật 22/10/2026:** đã bổ sung component states, sửa prototype và Wireframe, kiểm tra accessibility ở 360/412 dp và chạy ba flow trực tiếp. Có 8 màn chức năng, 3 trạng thái, overlay và 25 PNG. **Present mở công khai khi không đăng nhập**; quyền xem editor/design công khai còn chưa xác minh do CloudFront 403 trong môi trường. Xem [kết quả sau sửa](docs/reviews/current-fix-review.md).
+
+**Quy trình AI:** Codex đọc đề, persona, user flow và brief rồi dùng Figma MCP để thiết kế, phản biện và tinh chỉnh. Không dùng Stitch hoặc dựng lịch sử ba vòng lặp giả. [AI log](ai/ai-design-log.md) lưu prompt và bằng chứng thực tế; việc thay công cụ theo đề gốc cần giảng viên chấp thuận.
 
 ## Các flow
 
@@ -12,7 +14,7 @@
 2. Ghi bữa ăn: Trang chủ → Ghi bữa ăn → Đang phân tích → Kết quả → Nhật ký; có mô phỏng lỗi/thử lại và overlay xác nhận hủy.
 3. Theo dõi và học: Trang chủ → Tiến trình tuần → Bài học nhỏ → quay lại.
 
-Audit cấu trúc ghi nhận các đường chính; chưa xác minh bằng thao tác trực tiếp trong Figma Present. Goal cards còn tĩnh, các tab chưa nối đầy đủ, nhật ký trống mở thủ công. S05/S07/S09 là trạng thái; dialog không tính thành màn chức năng riêng.
+QA trong Present đã chạy ba lựa chọn mục tiêu, 15 inactive tab destinations, lỗi/retry, empty, overlay, loading/result và Back theo nguồn vào. S05/S07/S09 là trạng thái; dialog không tính thành màn chức năng riêng. [Flow 1](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-373&starting-point-node-id=13%3A373), [Flow 2](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-378&starting-point-node-id=13%3A378), [Flow 3](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-383&starting-point-node-id=13%3A383).
 
 ## Hồ sơ bàn giao
 
@@ -49,9 +51,9 @@ Lệnh kiểm tra cấu trúc, đường dẫn Markdown nội bộ, SHA-256/kíc
 ## Công cụ AI và giới hạn bằng chứng
 
 - **OpenAI Codex:** hỗ trợ tài liệu, rà soát UI/yêu cầu, prototype cũ và script kiểm tra.
-- **Figma MCP:** tạo/chỉnh sửa thiết kế ở lượt trước; xuất ảnh và kiểm kê cấu trúc. Lượt rà soát này đọc metadata trực tiếp để đối chiếu snapshot.
-- **Playwright:** được dùng kiểm tra HTML cũ; lượt trước trình xem Figma trả HTTP 403. Lượt này kết nối Browser không khởi tạo được, nên quyền xem công khai và Present vẫn chưa được xác minh.
+- **Figma MCP:** đọc cấu trúc/token, sửa variants, Wireframe, prototype và accessibility; xuất lại 25 PNG và lưu audit sau sửa.
+- **Playwright:** sau khi Browser trong ứng dụng lỗi khởi tạo, dùng trình duyệt dự phòng chạy ba flow và xác minh Present trong context mới chưa đăng nhập. Endpoint editor/design vẫn bị CloudFront chặn; [QA](docs/reviews/browser-check.md) phân biệt rõ hai kết quả.
 - **Impeccable:** chưa có skill/lệnh cài trong phiên trước; chỉ tham khảo tiêu chí review thủ công.
-- **Google Stitch:** chưa chạy; prompt chuẩn bị và ba vòng lặp dự kiến chưa phải bằng chứng thực hiện.
+- **Google Stitch:** không dùng theo lựa chọn của người thực hiện bài; bằng chứng thực tế dùng Codex + Figma MCP, được ghi đúng trong log.
 
 Persona chưa được nghiên cứu thực địa. Bộ wireframe `52:*` được dựng hồi cứu từ Final UI ngày 22/10/2026; không chứng minh quy trình trước Stitch. Figma chỉ mô phỏng tương tác, chưa thực hiện phân tích dinh dưỡng hay lưu/đồng bộ dữ liệu. Nội dung ứng dụng mang tính giáo dục, không thay thế tư vấn y tế.

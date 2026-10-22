@@ -1,34 +1,34 @@
 # Nếp Lành — Design decisions
 
-Các quyết định này phản ánh frame Figma hiện tại và ghi chú rà soát ngày 22/10/2026. Những hạng mục đánh dấu mở vẫn cần bằng chứng trước khi xem là đạt.
+Cập nhật sau sửa Figma ngày 22/10/2026. Có tối đa 10 quyết định chính; [AI log](../ai/ai-design-log.md) ghi đầu vào, phát hiện và quyết định theo quy trình Codex + Figma MCP.
 
-| # | Quyết định | Lý do | Hệ quả / bằng chứng |
-|---:|---|---|---|
-| 1 | Định vị app là công cụ giáo dục và theo dõi thói quen, không phải công cụ y tế. | Chủ đề dinh dưỡng có thể bị hiểu thành chẩn đoán hoặc cam kết sức khỏe. | Không dự đoán bệnh, kê điều trị, hứa phòng bệnh hay chấm điểm sức khỏe; nội dung cần rà soát trước handoff. |
-| 2 | Giữ 11 frame hiện tại, phân biệt màn hình chức năng với trạng thái và ghi rõ nguồn gốc wireframe. | Loading, Offline error và Empty journal là trạng thái/frame của luồng; rubric không tính chúng như màn hình độc lập. | Tám màn hình chức năng: Welcome, Goal, Home, Meal form, Result, Journal, Weekly, Article. Page 02 hiện có 11 frame grayscale dựng hồi cứu từ Final UI ngày 22/10/2026, không phải wireframe nguyên gốc trước UI. |
-| 3 | Tách xử lý gợi ý bữa ăn khỏi việc lưu vào nhật ký. | S05 xử lý gợi ý và tự chuyển sau 1.3 giây; S06 hiển thị gợi ý kèm CTA lưu. | Luồng hiện tại: S04 → S05 → S06 → “Lưu vào nhật ký” → S08. Link mô phỏng offline tại S04 → S07; tại S07 Back/secondary → S04 và Retry → S05. Không gọi S06 là saved result; prototype xác nhận đường đi nhưng không xác nhận draft được giữ sau lỗi hay việc lưu thành công. |
-| 4 | Giữ Goal cards tĩnh; phân biệt hành vi đã nối với ý tưởng refinement. | S02 chưa có chọn thẻ; prototype có Back → S01 và Save → S03. | Không mô tả reminders, skip hay edit là chức năng hiện có. Chúng chỉ là refinement tương lai nếu được bổ sung và kiểm tra. |
-| 5 | Journal và Empty journal phải phân biệt dữ liệu có và chưa có. | Trạng thái rỗng cần giải thích, không khiến người dùng nghĩ app bị lỗi. | Empty journal không dùng số liệu mẫu giả; CTA S09 dẫn tới S04 để bắt đầu ghi bữa ăn. |
-| 6 | Dùng palette Figma hiện tại với Roboto. | Giữ nhất quán với 24 variables được rà soát và các component đã căn chỉnh. | Primary #2F6B4F, onPrimary #FFFFFF, primaryContainer #E1F1E6, onContainer #183D2D, canvas #F7F8F4, surface #FFFFFF, textPrimary #1F2B24, textSecondary #526258, border #D6DFD7, error #A4261D, errorContainer #F9DEDC, success #196C46, peach #F4E4D2, sky #E6EEF8. Typography đã rà: button 16/24, card title 20/28, body 14/20, navigation 14/20. Audit ghi nhận 7 Text Styles và Effect Style Elevation/Level 1; 164 bound nodes, 174 bound paints. |
-| 7 | Chuẩn hóa căn chỉnh theo component thay vì sửa từng instance rời. | Các lỗi lệch nhãn/icon lặp lại trên nhiều màn hình và variants. | Đã nhóm vector vào Navigation Item; căn lại 26 button, 44 nav item, brand mark, form, loading/empty và dialog trong lượt review được ghi nhận. |
-| 8 | Mọi hit area phải đạt tối thiểu 48 × 48 dp. | 44 dp secondary actions và icon Back 40 dp không đáp ứng yêu cầu nếu đó là toàn bộ hit area. | Đã sửa 11 secondary actions thành 48 dp; Back 40 × 40 có wrapper 48 × 48; dialog source/cancel actions 48 dp. Cần rà các control còn lại và xem PNG export. |
-| 9 | Nhật ký tuần mô tả hành vi tự ghi nhận, không suy ra kết quả sức khỏe. | Log bữa ăn không đủ cơ sở để đánh giá sức khỏe cá nhân. | Dùng câu trung tính như “Bạn đã ghi nhận…”; không calories, cân nặng, bệnh hay ngôn ngữ nhân quả. |
-| 10 | Bài đọc phải ghi nguồn và dùng nội dung tự diễn đạt. | Đề tài lấy cảm hứng từ sách và nội dung dinh dưỡng cần được trình bày có trách nhiệm. | Dẫn WHO/AHA hoặc nguồn phù hợp; không sao chép sách, kê đơn hay hứa hẹn kết quả. |
+| # | Quyết định | Lý do và kết quả |
+| --- | --- | --- |
+| 1 | Giữ app ở phạm vi giáo dục và tự theo dõi. | Persona cần ghi/học nhẹ nhàng; không chẩn đoán hoặc hứa kết quả sức khỏe. |
+| 2 | Đếm 8 màn chức năng, tách loading/error/empty và overlay. | Đúng quy tắc rubric; không tăng số màn bằng trạng thái. |
+| 3 | Chỉ giữ 11 wireframe bộ 52:*. | Xóa bộ 12:* chồng nhau; grid rõ. Khai báo bộ hồi cứu, không sửa lịch sử. |
+| 4 | Goal có ba lựa chọn với ✓ và chữ Đã chọn. | Minh cần biết đang chọn gì; ba prototype variants phản hồi rõ, Save dẫn Home mẫu. Không khẳng định persistence. |
+| 5 | Dùng lại component, thêm states thiếu. | Bổ sung Pressed/Filled/Disabled/Destructive, giữ Auto Layout, bindings và instances review. |
+| 6 | Hoàn thiện control hiển thị và Back theo nguồn vào. | Nối Home link, 15 inactive tabs, empty entry; Article dùng BACK thay đích cố định. QA chạy trực tiếp đạt. |
+| 7 | Loading có timer đã kiểm thử và nút Xem kết quả. | Runtime không chuyển với giá trị MCP cũ; sau sửa tự chuyển, có đường chủ động cho người dùng. |
+| 8 | Error copy chỉ nói điều prototype chứng minh. | Không hứa đã giữ trên thiết bị khi chỉ có dữ liệu mẫu; retry/back/overlay kiểm thử riêng. |
+| 9 | Không truyền trạng thái chỉ bằng màu. | Goal/nav có ✓, biểu đồ có text ngày đã/chưa ghi và viền rõ; field border có token tương phản riêng. |
+| 10 | Giữ quy trình AI có thể truy vết. | Codex đọc đề/UX/brief rồi dùng Figma MCP; không gắn ảnh Figma thành Stitch hoặc tạo ba vòng lặp lịch sử giả. |
 
-## Accessibility checklist
+## Accessibility và responsive checklist
 
-| Tiêu chí | Mục tiêu | Trạng thái bằng chứng |
-|---|---|---|
-| Tương phản chữ thường | ≥4.5:1 | Đã tính các cặp palette trên canvas/surface; cần kiểm tra mọi lớp chữ trong frame cuối. |
-| Tương phản chữ lớn/điều khiển | ≥3:1 | Cần đo các cặp dùng thực tế, nhất là viền/focus. |
-| Vùng chạm | ≥48 × 48 dp | Đã xác nhận 11 secondary actions, Back wrapper và dialog source/cancel actions có hit area 48 dp; rà các control còn lại sau PNG export. |
-| Cỡ chữ nội dung | ≥14 sp | Body 14/20 đã rà soát ở một số card/header; các text layer còn lại cần kiểm tra. |
-| Trạng thái không chỉ bằng màu | Có nhãn/icon/hình dạng | Đã là quy tắc thiết kế; chưa có checklist từng trạng thái/frame. |
-| Điều hướng/Figma alignment | Nhãn/icon căn giữa component; prototype link đúng đích | 26 button và 44 Navigation Item đã được kiểm tra; điều hướng chỉ một phần: ba tab chưa chọn ở S03 có link; S08/S09/S10 chỉ tab Home nối S03; tab S11 chưa nối. S11 Back/CTA về S10. |
-| Responsive | 360, 412 và từ 600 dp | Ghi nhận áp dụng/xem trang chủ 412 px; chưa có bằng chứng đầy đủ cho mọi frame/breakpoint. |
-| Focus/đọc màn hình | Focus rõ, tên icon, thứ tự hợp lý | Chưa xác minh bằng assistive technology. |
-| Phục hồi offline | Giải thích lỗi, đường quay lại và Retry | Prototype nối S04 link mô phỏng offline → S07; S07 Back/secondary → S04, Retry → S05. Việc giữ dữ liệu chưa được xác minh. |
+| Tiêu chí | Kết quả sau sửa | Phạm vi bằng chứng |
+| --- | --- | --- |
+| Text contrast ≥4,5:1 | Đạt trong audit: thấp nhất 5,52:1. | 148 text layers Final UI và 316 Prototype/responsive; màu chữ/nền solid gần nhất. |
+| UI control contrast ≥3:1 | Field border khoảng 6,47:1; selected/primary/chart outlines đạt ngưỡng. | Token color/border/control và primary; hình trang trí không dùng riêng làm thông tin. |
+| Tap targets ≥48 × 48 dp | Không click target dưới ngưỡng trong audit; Back wrapper 48, CTA52, nav82×68. | Reactions và component geometry, không suy ra thử chạm trên phần cứng. |
+| Body/labels ≥14 sp | Các text layers hiển thị tối thiểu 14 px trong thiết kế, font Roboto. | Figma dp/px tương ứng ở khung chuẩn; app Flutter cần giữ đơn vị sp. |
+| Không chỉ bằng màu | ✓/Đã chọn cho goal, ✓ cho selected nav, chart có text alternative. | Render mới và QA quan sát. |
+| 360/412 dp | 11 frame chuẩn360 và 11 frame412; audit không text vượt màn. | Có PNG đối chiếu, không chỉ Home. |
+| ≥600 dp | Có mô tả trong handoff. | Đề không yêu cầu thiết kế frame breakpoint này. |
+| Reading order/keyboard | Đã sửa top-level, launch và overlay; focus+Enter chạy ba flow và15tabs. | Figma Present bật Adapt content for screen readers. |
+| Lỗi/phục hồi/overlay | Retry, sửa, Continue/Cancel, empty entry và loading/result đạt. | Walkthrough thực tế; fixture không chứng minh giữ input thật. |
 
-**Kết quả accessibility chưa hoàn tất:** Figma alignment review không đồng nghĩa với kiểm thử WCAG hoặc assistive technology. 11 secondary actions, AppBar Back wrapper và dialog source/cancel actions đã được xác nhận có hit area 48 dp. Cần kiểm tra những control còn lại và các tiêu chí khác.
+Bằng chứng: [audit accessibility](../docs/reviews/accessibility-audit.json), [QA browser](../docs/reviews/browser-check.md), [review tổng hợp](../docs/reviews/current-fix-review.md) và [PNG](../assets/figma/README.md).
 
-**Bổ sung sau đối chiếu đề gốc:** metadata mới ghi 22 frame ở trang Wireframe (hai bộ đặt chồng), không phải chỉ 11 frame như snapshot cũ. Button thiếu Pressed; Text Field thiếu Filled/Disabled; Card Pressed và Dialog destructive/error cần bổ sung hoặc xác minh. Xem [bảng đối chiếu](../docs/submission-review.md). Các ghi nhận lịch sử phía trên không xác nhận đã đáp ứng đủ mọi states/accessibility.
+Chưa thử TalkBack/VoiceOver trên thiết bị, text scaling hệ điều hành, bàn phím ảo hoặc toàn bộ thứ tự Tab/focus trap. Figma xuất overlay dạng article; chưa có semantic dialog của ứng dụng Flutter. Không coi kết quả này là chứng nhận toàn bộ WCAG.

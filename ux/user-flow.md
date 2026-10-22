@@ -2,125 +2,129 @@
 
 ## Cơ sở và phạm vi
 
-Đối chiếu prototype hiện tại trong Figma `Cc2O3xSmxgjfvDI2hrsY3Q` với [bản audit phản ứng](../design/figma-audit.json). Audit là kết quả đọc cấu trúc tương tác tĩnh, chưa phải walkthrough trực tiếp trong Present. Bảng dưới đây tách node của trang `03 Final UI` khỏi node của trang `06 Prototype` để tránh nhầm ID.
+File thiết kế: [Nếp Lành — Figma](https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q). Đã cập nhật liên kết và trạng thái lựa chọn qua Figma MCP ngày 22/10/2026. [Review lượt sửa](../docs/reviews/current-fix-review.md) ghi bằng chứng kiểm tra mới và kết quả Present/quyền xem; [audit JSON](../design/figma-audit.json) ghi cấu trúc. Không dùng audit tĩnh để suy ra toàn bộ thao tác đã chạy trong Present.
 
-Các flow mô tả đúng những liên kết prototype đã ghi nhận. Chúng không hàm ý đã có backend, lưu dữ liệu bền vững, đồng bộ, phân tích dinh dưỡng thật hoặc xử lý mạng thật. Mục `Hành vi dự kiến cho sản phẩm` ở cuối ghi riêng các việc cần thiết kế/triển khai sau này.
+QA sau sửa đã đạt ba flow, ba lựa chọn mục tiêu, 15 tab chưa chọn, retry, overlay, empty và Back theo ngữ cảnh. Present truy cập được khi không đăng nhập; editor chưa xác minh do CloudFront 403. Xem review để đối chiếu bằng chứng và đường dẫn Present.
 
-Nếp Lành hỗ trợ người dùng tự ghi bữa ăn, đặt mục tiêu linh hoạt và đọc nội dung dinh dưỡng phổ thông. Ứng dụng không chẩn đoán, điều trị, dự đoán nguy cơ hoặc cam kết phòng bệnh. Dialog xác nhận hủy là overlay, không phải màn hình thứ 12.
+Các flow là mô phỏng giao diện, không chứng minh backend, lưu bền vững, đồng bộ, xử lý mạng hoặc phân tích dinh dưỡng thật. Nếp Lành mang tính giáo dục, không chẩn đoán, điều trị hoặc cam kết phòng bệnh. Dialog hủy là overlay, không phải màn hình chức năng bổ sung.
 
 ## Danh sách màn hình và đối chiếu node
 
+Node Final UI thuộc trang 03; node Prototype thuộc trang 06. Các bản chọn mục tiêu là biến thể của S02, không được tính thêm màn hình.
+
 | ID | Tên màn hình | Final UI node | Prototype node | Vai trò |
-|---|---|---:|---:|---|
-| S01 | Chào mừng | `6:2` | `13:418` | Điểm vào flow bắt đầu |
-| S02 | Thiết lập mục tiêu | `6:19` | `13:434` | Trang lựa chọn mục tiêu; các thẻ mục tiêu hiện chưa có reaction riêng |
-| S03 | Trang chủ | `6:42` | `13:447` | Điểm vào Ghi bữa ăn và các tab điều hướng |
-| S04 | Ghi bữa ăn | `6:76` | `13:465` | Nhập bữa ăn, bắt đầu loading hoặc mở mô phỏng offline |
-| S05 | Đang phân tích | `6:101` | `13:476` | Loading; tự chuyển đến Kết quả sau 1.300 ms |
-| S06 | Kết quả | `6:118` | `13:485` | Kết quả trình diễn và đường mở/sửa nhật ký |
-| S07 | Lỗi kết nối | `6:138` | `13:497` | Trạng thái mô phỏng offline với thử lại/quay về nhập liệu |
-| S08 | Nhật ký bữa ăn | `6:155` | `13:507` | Nhật ký có bản ghi; có đường thêm bữa ăn và về Trang chủ |
-| S09 | Nhật ký trống | `6:186` | `13:522` | Empty state; có CTA sang Ghi bữa ăn nhưng chưa có đường vào từ flow khởi chạy chính |
-| S10 | Tiến trình tuần | `6:213` | `13:534` | Xem tiến trình và mở liên kết bài học |
-| S11 | Bài học nhỏ | `6:257` | `13:563` | Bài học; cả Back và CTA chính đều về S10 |
+| --- | --- | --- | --- | --- |
+| S01 | Chào mừng | `6:2` | `13:418` | Điểm vào onboarding |
+| S02 | Thiết lập mục tiêu | `6:19` | `13:434` | Chọn mục tiêu 1; chọn mục tiêu 2/3 dùng `63:267` / `63:291` |
+| S03 | Trang chủ | `6:42` | `13:447` | Điểm vào ghi bữa và điều hướng cấp cao |
+| S04 | Ghi bữa ăn | `6:76` | `13:465` | Form mẫu Filled, loading và nhánh mô phỏng offline |
+| S05 | Đang phân tích | `6:101` | `13:476` | Loading, tự chuyển sau khoảng 1,3 giây; có “Xem kết quả” dự phòng |
+| S06 | Kết quả | `6:118` | `13:485` | Kết quả mẫu và CTA tới nhật ký |
+| S07 | Lỗi kết nối | `6:138` | `13:497` | Retry hoặc quay lại kiểm tra biểu mẫu |
+| S08 | Nhật ký bữa ăn | `6:155` | `13:507` | Có bản ghi mẫu; có link xem ngày chưa ghi bữa |
+| S09 | Ngày chưa ghi bữa | `6:186` | `13:522` | Empty state theo ngày; mở từ S08 và có CTA ghi bữa |
+| S10 | Tiến trình tuần | `6:213` | `13:534` | Tiến trình mẫu và đường đọc bài học |
+| S11 | Bài học nhỏ | `6:257` | `13:563` | Back theo nguồn vào; CTA cuối bài tới S10 |
 
-**Overlay (không tính là màn hình):** `Xác nhận hủy bữa ăn` — Final UI node `10:126`, Prototype node `13:579`.
+**Overlay:** Xác nhận hủy bữa ăn — Final UI `10:126`, Prototype `13:579`.
 
-## Điều hướng đã nối trong prototype
+## Điểm bắt đầu và điều hướng cấp cao
 
-Các khu vực cấp cao là Trang chủ (S03), Nhật ký (S08/S09), Tiến trình (S10) và Học (S11 qua tab). S01/S02 thuộc onboarding; S04 là màn nhập lồng, S05/S07 là trạng thái xử lý/lỗi, S06 là kết quả. S11 còn được mở từ S10; overlay hủy thuộc S04. Cấu trúc này là IA; mức wiring hiện có được ghi bên dưới.
+Trang 06 có ba native flow starting points trên launch cards: `13:373` (Flow 1), `13:378` (Flow 2), `13:383` (Flow 3). Từ launch card tương ứng, đi tới S01 hoặc S03 rồi chạy đường chính dưới đây.
 
-Từ S03, các reaction được audit dẫn tới S04 Ghi bữa ăn, S08 Nhật ký bữa ăn, S10 Tiến trình tuần và S11 Bài học nhỏ. Tab Nhật ký trên Trang chủ hiện dẫn tới S08; không có reaction từ S03 tới S09. S09 vẫn là frame có CTA sang S04 và tab điều hướng về S03, nhưng phải được mở thủ công để trình bày empty state.
+Trên Home, Journal, Empty, Weekly và Article, mọi tab chưa chọn đều nối tới destination Trang chủ S03 / Nhật ký S08 / Tiến trình S10 / Học S11. Tab đang chọn có dấu ✓ và không chuyển trang khi bấm. Empty vẫn chọn tab Nhật ký. Link “Xem tiến trình tuần” trên Home (`13:458`) cũng mở S10; không cần đi vòng qua tab.
 
 ```text
-Flow 1: S01 → S02 → S03
-Flow 2: S03 → S04 → S05 --(sau 1.300 ms)→ S06 → S08
-                   ├─ Offline simulation link → S07 → thử lại → S05 → S06
-                   └─ App Bar → overlay xác nhận hủy → CLOSE về S04 / xác nhận hủy → S03
-Flow 3: S03 → S10 → S11 → S10
-                    S03 → S11 (tab Học) → S10
-S09 (mở thủ công) → S04; tab của S09 → S03
+Flow 1: S01 → S02 [chọn 1 / 2 / 3] → S03
+Flow 2: S03 → S04 → S05 --(~1,3 giây / Xem kết quả)→ S06 → S08
+                   ├─ Mô phỏng offline → S07 → Thử lại → S05 → S06
+                   └─ Back → overlay → CLOSE về S04 / Hủy bữa ăn → S03
+        S08 --Xem ngày chưa ghi bữa→ S09 → S04
+Flow 3: S03 → S10 → S11 --Back→ S10
+        S03 --tab Học→ S11 --Back→ S03
+        S11 --CTA cuối bài→ S10
 ```
 
-## Flow 1 — Chào mừng và thiết lập mục tiêu
+## Flow 1 — Chào mừng và chọn mục tiêu
 
-**Bắt đầu:** người dùng ở S01 Chào mừng.<br>
-**Mục tiêu:** đi qua màn hình thiết lập mục tiêu và tới Trang chủ.<br>
-**Kết thúc:** S03 Trang chủ.
+**Bắt đầu:** launch Flow 1 → S01. **Mục tiêu:** chọn một mục tiêu và tới Trang chủ. **Kết thúc:** S03.
 
 ```mermaid
 flowchart TD
-  A[Start: S01 Chào mừng] -->|Button| B[S02 Thiết lập mục tiêu]
-  B -->|Button tiếp tục/lưu| C[End: S03 Trang chủ]
-  B -->|App Bar Back| A
+  A[Start: S01 Chào mừng] --> B[S02 Thiết lập mục tiêu]
+  B -->|Chọn thẻ 1 / 2 / 3| C[S02 với lựa chọn tương ứng]
+  C -->|Lưu mục tiêu| D[End: S03 Trang chủ]
+  B -->|Back| A
+  C -->|Back| A
 ```
 
-- **Đường chính:** S01 —Button→ S02 —Button→ S03.
-- **Nhánh thay thế:** App Bar ở S02 quay về S01; người dùng có thể tiếp tục lại từ đó.
-- **Giới hạn prototype:** mục tiêu được trình bày bằng các thẻ tĩnh; audit không thấy reaction chọn riêng trên thẻ. Vì vậy, flow hiện chỉ chứng minh đường tiếp tục và Back, không chứng minh việc chọn mục tiêu đã được lưu.
-- **Ánh xạ màn hình:** S01, S02, S03.
+- **Đường chính:** S01 → S02 → chọn thẻ → Lưu mục tiêu → S03.
+- **Nhánh thay thế:** đổi thẻ để chuyển giữa ba biến thể lựa chọn; Back trở lại S01.
+- **Phản hồi:** thẻ đã chọn có dấu ✓ và nhãn “Đã chọn”, không chỉ thay màu nền.
+- **Giới hạn:** thao tác chọn là chuyển giữa các frame trạng thái mẫu. Save mở Home với dữ liệu mẫu, không chứng minh mục tiêu được lưu hoặc phản ánh động trên Home. Nhắc nhở và bỏ qua chưa được thiết kế trong flow này.
+- **Ánh xạ:** S01, S02 và hai bản trạng thái S02, S03.
 
-## Flow 2 — Ghi bữa ăn, xử lý mô phỏng lỗi kết nối và xem nhật ký
+## Flow 2 — Ghi bữa, phục hồi lỗi và xem nhật ký
 
-**Bắt đầu:** người dùng ở S03 Trang chủ.<br>
-**Mục tiêu:** mở form ghi bữa ăn, xem trạng thái/kết quả prototype và tới nhật ký.<br>
-**Kết thúc:** S08 Nhật ký bữa ăn; nhánh lỗi có thể thử lại hoặc hủy thao tác.
+**Bắt đầu:** launch Flow 2 → S03. **Mục tiêu:** mở form, xem kết quả mẫu và tới nhật ký; có thể phục hồi từ lỗi mô phỏng. **Kết thúc:** S08 hoặc S03 khi xác nhận hủy.
 
 ```mermaid
 flowchart TD
-  A[Start: S03 Trang chủ] -->|Button Ghi bữa ăn| B[S04 Ghi bữa ăn]
-  B -->|Button tiếp tục| C[S05 Đang phân tích]
-  C -->|After timeout 1.300 ms| D[S06 Kết quả]
-  D -->|Button mở nhật ký| E[End: S08 Nhật ký bữa ăn]
-  D -->|Edit action / App Bar| B
-  B -.->|Offline simulation link| F[S07 Lỗi kết nối]
-  F -->|Button thử lại| C
-  F -->|App Bar / Offline back action| B
-  B -->|App Bar mở overlay| G[Overlay Xác nhận hủy]
-  G -->|Tiếp tục: CLOSE overlay| B
-  G -->|Hủy bữa ăn — action| A
+  A[Start: S03 Trang chủ] -->|Ghi bữa ăn| B[S04 Form mẫu]
+  B -->|Phân tích| C[S05 Loading]
+  C -->|Khoảng 1,3 giây hoặc Xem kết quả| D[S06 Kết quả mẫu]
+  D -->|Lưu vào nhật ký| E[End: S08 Nhật ký]
+  D -->|Sửa hoặc Back| B
+  B -.->|Mô phỏng offline| F[S07 Lỗi kết nối]
+  F -->|Thử lại| C
+  F -->|Quay lại / Back| B
+  B -->|Back| G[Overlay xác nhận hủy]
+  G -->|Tiếp tục: CLOSE| B
+  G -->|Hủy bữa ăn| A
+  E -->|Xem ngày chưa ghi bữa| H[S09 Ngày chưa ghi bữa]
+  H -->|Ghi bữa ăn| B
 ```
 
-- **Đường chính:** S03 → S04 → S05 → S06 → S08. S05 tự đi tiếp tới S06 sau 1.300 ms; reaction đó không dẫn tới S07.
-- **Nhánh thay thế:** S06 có reaction quay lại S04 để sửa; S03 có tab Nhật ký dẫn trực tiếp tới S08. S08 có nút quay lại S04 để ghi thêm bữa.
-- **Lỗi/phục hồi:** lỗi được mở từ Offline simulation link trên S04. Từ S07, nút thử lại đưa tới S05 rồi timer 1.300 ms đưa tới S06; App Bar và Offline back action đưa về S04. Đây là mô phỏng trong prototype, không xác nhận xử lý mạng hoặc lưu offline thật.
-- **Hủy:** App Bar trên S04 mở overlay `10:126` / `13:579`. Nút tiếp tục đóng overlay (`CLOSE`) và để S04 bên dưới; nút xác nhận hủy điều hướng về S03.
-- **Trạng thái rỗng:** S09 không có route vào từ Trang chủ trong flow hiện tại. Khi frame được mở thủ công, CTA của S09 dẫn tới S04 và tab điều hướng dẫn tới S03. Không thể trình bày đây là nhánh đã nối từ S03.
-- **Ánh xạ màn hình:** đường chính S03, S04, S05, S06, S08; lỗi S07; S09 là frame trạng thái rỗng rời, không thuộc đường đi nối từ launch chính. Overlay hủy không tính là màn hình.
+- **Đường chính:** S03 → S04 → S05 → S06 → S08. S05 dùng timer khoảng 1,3 giây; nút “Xem kết quả” (`67:403`) là đường dự phòng tới S06. Không có nhánh timer S05 → S07.
+- **Nhánh sửa/thêm:** S06 Back/Edit → S04; S08 Ghi thêm → S04. S03 tab Nhật ký có thể mở S08 trực tiếp.
+- **Lỗi/phục hồi:** link mô phỏng offline từ S04 mở S07. Retry → S05 → S06; Back hoặc hành động quay lại → S04. Nội dung lỗi hướng dẫn “Quay lại biểu mẫu để kiểm tra thông tin bữa ăn.”, không hứa đã lưu dữ liệu trên thiết bị.
+- **Hủy:** Back ở S04 mở overlay. “Tiếp tục chỉnh sửa” đóng overlay, giữ frame S04 bên dưới; “Hủy bữa ăn” mở S03.
+- **Trạng thái rỗng:** link “Xem ngày chưa ghi bữa” (`63:365`) trên S08 mở S09; CTA S09 mở S04. Đây là ngày không có bản ghi trong dữ liệu mẫu, không ngụ ý toàn bộ nhật ký chưa từng có dữ liệu.
+- **Giới hạn:** fields là giá trị mẫu Filled; không có nhập liệu, persistence, ghi offline hoặc validation ứng dụng thật.
+- **Ánh xạ:** S03–S09 và overlay; S05/S07/S09 là trạng thái, không tính thành màn chức năng riêng.
 
-## Flow 3 — Xem tiến trình tuần và mở bài học
+## Flow 3 — Tiến trình tuần và bài học
 
-**Bắt đầu:** người dùng ở S03 Trang chủ.<br>
-**Mục tiêu:** mở Tiến trình tuần, đọc Bài học nhỏ và quay lại Tiến trình tuần.<br>
-**Kết thúc chính:** S10 Tiến trình tuần.
+**Bắt đầu:** launch Flow 3 → S03. **Mục tiêu:** mở tiến trình, đọc bài và quay lại. **Kết thúc chính:** S10.
 
 ```mermaid
 flowchart TD
-  A[Start: S03 Trang chủ] -->|Navigation Item Tiến trình| B[S10 Tiến trình tuần]
-  B -->|Weekly learning link| C[S11 Bài học nhỏ]
-  C -->|App Bar Back hoặc CTA chính| D[End: S10 Tiến trình tuần]
-  A -->|Nhánh thay thế: Navigation Item Học| C
-  C -->|Back / CTA vẫn về đích cố định| D
-  B -->|Navigation Item Trang chủ| A
+  A[Start: S03 Trang chủ] -->|Tab Tiến trình hoặc link tuần| B[S10 Tiến trình tuần]
+  B -->|Đọc bài học| C[S11 Bài học nhỏ]
+  C -->|Back theo lịch sử| B
+  C -->|CTA cuối bài| B
+  A -->|Tab Học| C
+  C -->|Back khi vào từ Home| A
 ```
 
-- **Đường chính:** S03 → S10 → S11 → S10.
-- **Nhánh thay thế:** tab Học trên S03 mở thẳng S11; tại S11, cả App Bar Back và CTA chính đều về S10, không quay lại theo nguồn gọi.
-- **Lỗi/phục hồi:** audit không ghi nhận lỗi tải bài học trong các reaction của những frame này; không khẳng định có cache hoặc đọc ngoại tuyến.
-- **Ánh xạ màn hình:** S03, S10, S11.
+- **Đường chính:** S03 → S10 → S11 → Back hoặc CTA → S10.
+- **Nhánh thay thế:** tab Học trên S03 mở thẳng S11; AppBar dùng hành động `BACK` để về S03 theo nguồn vào. CTA cuối bài vẫn đi S10 ở cả hai đường vào.
+- **Phản hồi ngoài màu:** chart có text “Đã ghi: T2–T6 · Chưa ghi: T7, CN”; selected navigation có dấu ✓.
+- **Giới hạn:** dữ liệu tuần/bài đọc là dữ liệu mẫu; chưa có cache, tải bài thật hoặc trạng thái đã đọc được lưu.
+- **Ánh xạ:** S03, S10, S11.
 
 ## Bảng ánh xạ flow–màn hình
 
-| Flow | Đường chính | Nhánh đã audit |
-|---|---|---|
-| 1. Thiết lập mục tiêu | S01 → S02 → S03 | Back S02 → S01; thẻ chọn mục tiêu chưa có reaction |
-| 2. Ghi bữa ăn | S03 → S04 → S05 → S06 → S08 | Offline S04 → S07 → S05; sửa/quay lại S04; overlay xác nhận hủy; S09 detached, mở thủ công → S04 |
-| 3. Tiến trình và bài học | S03 → S10 → S11 → S10 | S03 → S11 trực tiếp; cả hai control ở S11 vẫn → S10 |
+| Flow | Đường chính | Nhánh thay thế/phục hồi |
+| --- | --- | --- |
+| 1. Chọn mục tiêu | S01 → S02 → S03 | Ba trạng thái chọn thẻ; Back S02 → S01 |
+| 2. Ghi bữa ăn | S03 → S04 → S05 → S06 → S08 | Offline/retry; sửa; overlay hủy; S08 → S09 → S04 |
+| 3. Tiến trình và bài học | S03 → S10 → S11 → S10 | Home → Học → Back về Home; CTA cuối bài về Weekly |
 
-## Hành vi dự kiến cho sản phẩm, chưa được prototype chứng minh
+## Hành vi sản phẩm cần triển khai sau prototype
 
-- Làm cho lựa chọn mục tiêu ở S02 tương tác được và định nghĩa rõ trạng thái mặc định, lưu, Back và bỏ qua.
-- Nếu cần xử lý ghi bữa ăn khi mất mạng, xác định riêng quy tắc lưu cục bộ, retry, thông báo trạng thái và chống tạo bản ghi trùng; link mô phỏng hiện tại không chứng minh các hành vi này.
-- Nếu S05 đại diện phân tích thật trong sản phẩm, xác định nguồn dữ liệu, nội dung giải thích và giới hạn; timer 1.300 ms hiện tại chỉ là chuyển cảnh prototype.
-- Quyết định cách mở S09 trong prototype hoặc giữ rõ đây là frame trình bày trạng thái rỗng độc lập.
-- Giữ nội dung dinh dưỡng ở mức giáo dục phổ thông, có nguồn và không đưa ra tuyên bố chẩn đoán, điều trị, phòng hoặc chữa bệnh.
+- Lưu lựa chọn mục tiêu thật và cập nhật Home; xác định riêng nhu cầu bỏ qua, đổi mục tiêu và nhắc nhở.
+- Validation form, lưu draft/local commit, xử lý lỗi mạng, chống bản ghi trùng và đồng bộ. Không báo thành công trước khi lưu thật.
+- Thay timer loading bằng trạng thái service; giữ đường thoát/phục hồi nếu dịch vụ chậm hoặc lỗi.
+- Chọn ngày và empty state theo dữ liệu thực thay cho link demo.
+- Kiểm thử trên thiết bị với bàn phím, text scaling và trình đọc màn hình; kết quả Figma không thay thế kiểm thử ứng dụng.
