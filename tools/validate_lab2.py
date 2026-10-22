@@ -223,7 +223,7 @@ def check_accessibility():
 
 def print_open_items():
     print('QA evidence: docs/reviews/browser-check.md records actual Present/anonymous checks.')
-    print('OPEN: public editor access (CloudFront blocks verification here), lecturer approval')
+    print('OPEN: access to all six design pages/Share settings, lecturer approval')
     print('     of Codex + Figma MCP substitution, repository naming/group approval, classmate handoff.')
     print('See docs/submission-review.md. Repository PASS does not mean rubric complete.')
 

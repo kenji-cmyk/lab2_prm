@@ -11,6 +11,8 @@ Ngày kiểm tra: **22/10/2026**. Phạm vi: file `Cc2O3xSmxgjfvDI2hrsY3Q`, tran
 | Mở Present trong browser context mới, không cookies hay đăng nhập | **Đạt**: HTTP 200, tiêu đề đúng `Nhóm 6 — Ăn gì không chết - 06 Prototype`, render được launch card Flow 1 và nút **Bắt đầu**. Thanh trình xem hiện **Log in or create account**. Không thay đổi thiết lập chia sẻ. |
 | Xác nhận cài đặt “Anyone with the link can view” của file thiết kế | **Chưa xác minh**: truy cập Present công khai đã chạy được, nhưng chưa đọc được hộp thoại Share của editor. Không suy diễn quyền editor từ quyền prototype. |
 
+**Cập nhật ở lượt chỉnh Wireframe tiếp theo:** Playwright mở Chrome có giao diện trong profile mới chưa đăng nhập, URL design nhận HTTP 200 và render trang **02 Wireframe**. UI khách hiện “Sign up to comment, edit, inspect and more.” Kết quả này xác nhận mở được trang design ở chế độ khách; lỗi 403 ở bảng trên là kết quả headless trước đó. Chưa kiểm tra lần lượt đủ sáu trang hoặc giá trị Share. Sau lời nhắc đăng nhập để có quyền Edit, người dùng chọn **“dùng figma mcp”**; toàn bộ thao tác sửa Wireframe được thực hiện qua MCP.
+
 Link Present đã kiểm tra trong context mới: [Flow 1 — Bắt đầu thói quen](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-373&starting-point-node-id=13%3A373).
 
 ## Accessibility của trình xem
@@ -48,6 +50,6 @@ S05 trước sửa không tự chuyển sang S06: chờ 30 giây khi bật scree
 
 ## Phạm vi chưa xác minh
 
-- Quyền mở **editor/design** công khai và giá trị trong hộp thoại Share: URL design bị CloudFront chặn; không có thao tác Open in editor trong các control của trình xem chưa đăng nhập đã quan sát. **Prototype công khai đã xác minh bằng context sạch.**
+- Giá trị trong hộp thoại Share và quyền xem lần lượt đủ sáu trang chưa kiểm tra. **Prototype và trang design/Wireframe đã mở được không đăng nhập**, theo hai lần kiểm tra trực tiếp mô tả ở trên.
 - Không chạy kiểm thử với thiết bị trợ năng thực, font scaling hệ điều hành hay dữ liệu nhập thật. Phép focus + Enter chứng minh kích hoạt bằng bàn phím trong Present, chưa thay thế kiểm tra thứ tự Tab và focus trap của ứng dụng được triển khai.
 - Không coi số lỗi console của chính Figma/telemetry là lỗi của thiết kế khi flow và render vẫn hoạt động; không thu thập token/cookies vào hồ sơ.

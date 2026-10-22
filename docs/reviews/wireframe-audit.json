@@ -1,0 +1,287 @@
+{
+  "fileKey": "Cc2O3xSmxgjfvDI2hrsY3Q",
+  "reviewDate": "2026-10-22",
+  "scope": "02 Wireframe only; static low-fidelity layouts",
+  "frameCount": 11,
+  "frames": [
+    {
+      "id": "52:407",
+      "name": "WF — 01 Chào mừng",
+      "x": 40,
+      "y": 180,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:425",
+      "name": "WF — 02 Thiết lập mục tiêu",
+      "x": 460,
+      "y": 180,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:466",
+      "name": "WF — 03 Trang chủ",
+      "x": 880,
+      "y": 180,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:549",
+      "name": "WF — 04 Ghi bữa ăn",
+      "x": 40,
+      "y": 1080,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:596",
+      "name": "WF — 05 Đang phân tích",
+      "x": 460,
+      "y": 1080,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:631",
+      "name": "WF — 06 Kết quả",
+      "x": 880,
+      "y": 1080,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:666",
+      "name": "WF — 07 Lỗi kết nối",
+      "x": 40,
+      "y": 1980,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:696",
+      "name": "WF — 08 Nhật ký bữa ăn",
+      "x": 460,
+      "y": 1980,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:776",
+      "name": "WF — 09 Nhật ký trống",
+      "x": 880,
+      "y": 1980,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:856",
+      "name": "WF — 10 Tiến trình tuần",
+      "x": 40,
+      "y": 2880,
+      "width": 360,
+      "height": 800
+    },
+    {
+      "id": "52:947",
+      "name": "WF — 11 Bài học nhỏ",
+      "x": 460,
+      "y": 2880,
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "visibleTextCount": 143,
+  "minFontSize": 14,
+  "fontFamilies": [
+    "Roboto"
+  ],
+  "textOutsideScreens": [],
+  "intersectingTextPairs": [],
+  "nonGrayscaleFillNodeIds": [],
+  "navigation": [
+    {
+      "id": "52:521",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:528",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:535",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:542",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:748",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:755",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:762",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:769",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:828",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:835",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:842",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:849",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:919",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:926",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:933",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:940",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:997",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:1004",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:1011",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    },
+    {
+      "id": "52:1018",
+      "width": 82,
+      "height": 68,
+      "layoutMode": "VERTICAL",
+      "iconBottom": 38,
+      "labelTop": 42,
+      "gap": 4
+    }
+  ],
+  "sourceNote": "Bộ đối chiếu dựng hồi cứu từ Final UI ngày 22/10/2026. Không phải bằng chứng wireframe trước AI generation."
+}

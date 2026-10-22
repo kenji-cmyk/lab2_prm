@@ -98,3 +98,11 @@ Kết quả và bằng chứng kiểm tra cuối nằm trong [review hiện tạ
 Bộ wireframe `52:*` được dựng hồi cứu từ Final UI trong lượt trước, không chứng minh wireframe có trước khi tạo giao diện. Số liệu audit cũ (32 reactions, 31 đích hợp lệ, 24 variables, 7 Text Styles, 1 Effect Style) chỉ thuộc snapshot trước sửa; kết quả cuối dùng review hiện tại và dữ liệu mới.
 
 Ảnh render/export chứng minh hình ảnh tại thời điểm xuất; cấu trúc chứng minh node/variant/reaction có trong file. Present walkthrough mới chứng minh đường đi được thao tác trong trình xem; kiểm tra không đăng nhập mới hỗ trợ xác nhận quyền công khai. Prototype không tự chứng minh backend, lưu bền vững, phân tích dinh dưỡng thật hoặc hỗ trợ trình đọc màn hình trên thiết bị.
+
+## Lượt tinh chỉnh Wireframe theo yêu cầu tiếp theo — 22/10/2026
+
+Prompt thực tế: **“dùng playwright chỉnh lại wireframe trên figma”**. Playwright đã mở được trang design ở chế độ khách bằng Chrome có giao diện, nhưng UI yêu cầu đăng nhập để sửa. Khi được nhắc đăng nhập, người dùng chọn **“dùng figma mcp”**. Vì vậy công cụ thực hiện chỉnh sửa là **Codex + Figma MCP**.
+
+Codex đọc lại cấu trúc và screenshot trang 02 Wireframe, đối chiếu nội dung đã sửa của Final UI/Prototype; phát hiện icon của các tab chưa chọn nằm đè lên nhãn. MCP tinh giản 11 khung hiện có thành low-fi trắng–xám: bỏ minh họa trang trí, dùng placeholder và viền phẳng, giữ phân cấp nội dung. Auto Layout đưa icon lên trước nhãn trong 20 nav items, cách nhau 4 px. Đồng bộ dấu chọn Goal, nội dung lỗi, ngày nhật ký trống, đường tiếp tục từ loading và chú giải biểu đồ với các màn hiện tại.
+
+Kết quả thực tế: giữ nguyên 11 frame IDs/kích thước/vị trí; [audit riêng](../docs/reviews/wireframe-audit.json) ghi 143 text layers dùng Roboto ≥14 px, không bounding box chữ chồng nhau hoặc vượt màn, mọi fill hiển thị đều thuộc thang xám. Đã xem render và xuất lại [ảnh overview](../assets/figma/14-wireframe-overview.png), cập nhật SHA-256 trong manifest. [Script đã dùng](../tools/figma/refine-wireframes.js) chỉ tác động trang Wireframe. Đây là lượt tinh chỉnh hồi cứu thực tế, không đổi thành bằng chứng wireframe có trước generation hoặc ba vòng lặp lịch sử.

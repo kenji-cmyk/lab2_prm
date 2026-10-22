@@ -4,7 +4,7 @@
 
 **Thiết kế:** [Figma của Nhóm 6](https://www.figma.com/design/Cc2O3xSmxgjfvDI2hrsY3Q). Mở trang **06 Prototype**, chọn điểm bắt đầu rồi bấm Present.
 
-**Cập nhật 22/10/2026:** đã bổ sung component states, sửa prototype và Wireframe, kiểm tra accessibility ở 360/412 dp và chạy ba flow trực tiếp. Có 8 màn chức năng, 3 trạng thái, overlay và 25 PNG. **Present mở công khai khi không đăng nhập**; quyền xem editor/design công khai còn chưa xác minh do CloudFront 403 trong môi trường. Xem [kết quả sau sửa](docs/reviews/current-fix-review.md).
+**Cập nhật 22/10/2026:** đã bổ sung component states, sửa prototype và 11 Wireframe low-fi, kiểm tra accessibility ở 360/412 dp và chạy ba flow trực tiếp. Có 8 màn chức năng, 3 trạng thái, overlay và 25 PNG. **Present và trang design đều mở được khi chưa đăng nhập**; design được kiểm tra lại bằng Chrome có giao diện sau lỗi CloudFront ở lần chạy headless. Xem [kết quả sau sửa](docs/reviews/current-fix-review.md).
 
 **Quy trình AI:** Codex đọc đề, persona, user flow và brief rồi dùng Figma MCP để thiết kế, phản biện và tinh chỉnh. Không dùng Stitch hoặc dựng lịch sử ba vòng lặp giả. [AI log](ai/ai-design-log.md) lưu prompt và bằng chứng thực tế; việc thay công cụ theo đề gốc cần giảng viên chấp thuận.
 
@@ -52,7 +52,7 @@ Lệnh kiểm tra cấu trúc, đường dẫn Markdown nội bộ, SHA-256/kíc
 
 - **OpenAI Codex:** hỗ trợ tài liệu, rà soát UI/yêu cầu, prototype cũ và script kiểm tra.
 - **Figma MCP:** đọc cấu trúc/token, sửa variants, Wireframe, prototype và accessibility; xuất lại 25 PNG và lưu audit sau sửa.
-- **Playwright:** sau khi Browser trong ứng dụng lỗi khởi tạo, dùng trình duyệt dự phòng chạy ba flow và xác minh Present trong context mới chưa đăng nhập. Endpoint editor/design vẫn bị CloudFront chặn; [QA](docs/reviews/browser-check.md) phân biệt rõ hai kết quả.
+- **Playwright:** dùng trình duyệt dự phòng chạy ba flow và xác minh Present không đăng nhập; lần kiểm tra tiếp theo bằng Chrome có giao diện mở được trang Wireframe ở chế độ khách. Người dùng chọn Figma MCP để thực hiện chỉnh sửa; xem [QA](docs/reviews/browser-check.md).
 - **Impeccable:** chưa có skill/lệnh cài trong phiên trước; chỉ tham khảo tiêu chí review thủ công.
 - **Google Stitch:** không dùng theo lựa chọn của người thực hiện bài; bằng chứng thực tế dùng Codex + Figma MCP, được ghi đúng trong log.
 

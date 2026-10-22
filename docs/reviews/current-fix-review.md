@@ -7,7 +7,7 @@ Ngày: **22/10/2026**. File: [Nếp Lành](https://www.figma.com/design/Cc2O3xSm
 | Hạng mục | Thay đổi đã thực hiện | Bằng chứng |
 | --- | --- | --- |
 | Component states | Thêm Button Pressed `61:78`, Text Field Filled `61:80` và Disabled `61:85`, Card Pressed `61:90`, Dialog Destructive `61:93`. Giữ Auto Layout và bindings từ component gốc. | [Ảnh instances của các states](../../assets/figma/15-component-states.png), [audit](../../design/figma-audit.json). |
-| Wireframe | Xóa chính xác 11 duplicate frame `12:*`; giữ 11 frame `52:*`, grid ba cột không chồng. Có note nguồn hồi cứu. | [Ảnh wireframe mới](../../assets/figma/14-wireframe-overview.png), [script](../../tools/figma/fix-wireframes.js). |
+| Wireframe | Xóa 11 duplicate frame `12:*`; giữ 11 frame `52:*`, grid ba cột không chồng. Lượt tiếp theo dùng MCP tinh giản thành khối trắng–xám, placeholder minh họa, viền phẳng; sửa 20 nav items để icon/nhãn cách 4 px, đồng bộ Goal/error/empty/loading/chart với nội dung hiện tại. Có note nguồn hồi cứu. | [Ảnh wireframe mới](../../assets/figma/14-wireframe-overview.png), [script tinh chỉnh](../../tools/figma/refine-wireframes.js), [audit](wireframe-audit.json). |
 | Chọn mục tiêu | Ba lựa chọn chuyển giữa S02 `13:434`, `63:267`, `63:291`; lựa chọn hiện ✓ và “Đã chọn”. Save tới Home. | [QA trực tiếp](browser-check.md). Đây là lựa chọn trình diễn; chưa có persistence hoặc Home tùy biến theo goal. |
 | Điều hướng | Nối 15 inactive bottom-tab destinations; Home secondary link mở Weekly; Journal có lối vào ngày trống; Article Back về nguồn gọi. | [QA trực tiếp](browser-check.md), 95 reactions/92 destinations trong audit. |
 | Starting points | Đặt ba native flow starting point ở launch `13:373`, `13:378`, `13:383`. | Sidebar Flows và walkthrough được xác nhận trong QA. |
@@ -36,7 +36,9 @@ Ngày: **22/10/2026**. File: [Nếp Lành](https://www.figma.com/design/Cc2O3xSm
 
 [Flow 1](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-373&starting-point-node-id=13%3A373), [Flow 2](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-378&starting-point-node-id=13%3A378), [Flow 3](https://www.figma.com/proto/Cc2O3xSmxgjfvDI2hrsY3Q?node-id=13-383&starting-point-node-id=13%3A383) đều chạy được; [biên bản browser](browser-check.md) lưu từng kết quả.
 
-**Quyền xem editor/design công khai còn chưa xác minh:** endpoint design bị CloudFront 403 trong môi trường kiểm tra, chưa tới màn Figma xin quyền. Không kết luận file riêng tư hoặc tự khẳng định “Anyone with the link can view” đã bật. Cần mở link design trong cửa sổ riêng tư bên ngoài môi trường này để xác nhận người chấm có thể xem đủ sáu trang.
+**Trang design đã mở được ở chế độ khách:** lần kiểm tra tiếp theo bằng Chrome có giao diện nhận HTTP 200 và render trang Wireframe. Figma hiện lời mời “Sign up to comment, edit, inspect and more.” Lỗi CloudFront 403 thuộc lần chạy headless trước đó. Chưa đọc giá trị trong hộp thoại Share hoặc thử lần lượt đủ sáu trang; không khẳng định khách có quyền sửa. Người dùng chọn MCP để chỉnh Wireframe, không cần đăng nhập phiên Playwright.
+
+**Audit riêng lượt tinh chỉnh Wireframe:** đúng 11 khung 360 × 800, 143 text layers hiển thị dùng Roboto ≥14 px; không text bounding box vượt cạnh màn hoặc giao nhau, không fill màu ngoài thang xám. Cả 20 nav items có Auto Layout dọc, icon kết thúc ở y=38 và nhãn bắt đầu y=42. Đã xem render tổng quan sau sửa. Đây là Wireframe tĩnh; kiểm tra này không thay thế audit tương tác/accessibility của Prototype.
 
 ## Tài liệu và nguồn thực thi
 
@@ -48,4 +50,6 @@ Các tài liệu API chính thức đã đối chiếu: [Reaction](https://devel
 
 ## Kiểm tra repository và review độc lập
 
-Validator đạt: 144 đường dẫn nội bộ, 25 PNG khớp byte/SHA-256/CRC, 11 wireframe không chồng, đủ states/Auto Layout, 3 native flow starts, 95 reactions và coverage accessibility khớp từng node/kích thước với audit. Đã thử sáu dữ liệu lỗi trong bộ nhớ: thiếu Filled, wireframe chồng, thiếu starting point, timer cũ, contrast thấp và mất coverage Final UI/360 dp; tất cả bị validator từ chối. Review độc lập xác nhận kết quả và không còn finding cần sửa; git diff --check đạt.
+Ở lượt sửa states/prototype trước, validator đạt 144 đường dẫn nội bộ, 25 PNG khớp byte/SHA-256/CRC, 11 wireframe không chồng, đủ states/Auto Layout, 3 native flow starts, 95 reactions và coverage accessibility khớp từng node/kích thước với audit. Đã thử sáu dữ liệu lỗi trong bộ nhớ: thiếu Filled, wireframe chồng, thiếu starting point, timer cũ, contrast thấp và mất coverage Final UI/360 dp; tất cả bị validator từ chối. Review độc lập lượt đó không còn finding cần sửa.
+
+Sau lượt tinh chỉnh Wireframe, chạy lại validator đạt **150 đường dẫn nội bộ, 25 PNG** và các kiểm tra snapshot/accessibility hiện có; audit Wireframe riêng ở trên đọc trực tiếp từ MCP. `git diff --check` đạt. Lượt này tự rà soát script/diff và xem render, không có thêm review độc lập hoặc chạy lại walkthrough Prototype.

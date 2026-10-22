@@ -30,6 +30,6 @@
 | [responsive/10-tien-trinh-tuan-412.png](responsive/10-tien-trinh-tuan-412.png) | responsive | 412 × 800 |
 | [responsive/11-bai-hoc-nho-412.png](responsive/11-bai-hoc-nho-412.png) | responsive | 412 × 800 |
 
-Wireframe hiện chỉ còn bộ52:* với11frame, không chồng; nguồn hồi cứu được khai báo. Bộ412đối chiếu đủS01–S11, không tính tăng số màn chức năng. [Review sau sửa](../../docs/reviews/current-fix-review.md) và [QA Present](../../docs/reviews/browser-check.md) tách bằng chứng hình ảnh khỏi tương tác/quyền truy cập.
+Wireframe hiện chỉ còn bộ52:* với11frame low-fi trắng–xám, không chồng; icon/nhãn navigation cách4px, nguồn hồi cứu được khai báo. Ảnh overview đã xuất lại sau lượt tinh chỉnh bằng MCP; [audit Wireframe](../../docs/reviews/wireframe-audit.json) ghi 143 text layers, cỡ nhỏ nhất14px, không text bounding box chồng nhau hoặc vượt khung. Bộ412đối chiếu đủS01–S11, không tính tăng số màn chức năng. [Review sau sửa](../../docs/reviews/current-fix-review.md) và [QA Present](../../docs/reviews/browser-check.md) tách bằng chứng hình ảnh khỏi tương tác/quyền truy cập.
 
 Chạy python tools/validate_lab2.py từ thư mục gốc để kiểm tra manifest, PNG, đường dẫn, component states, native starting points và audit accessibility. Fixture không chứng minh lưu dữ liệu thật.

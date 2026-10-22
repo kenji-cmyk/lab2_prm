@@ -4,6 +4,7 @@ Các file JavaScript là mã chạy qua **Figma MCP use_figma**, không phải J
 
 - `fix-components.js`: thêm variants thiếu, border control có tương phản và sắp khu vực thư viện.
 - `fix-wireframes.js`: xóa đúng IDs của bộ trùng đã kiểm kê, sắp bộ chính 52:*.
+- `refine-wireframes.js`: tinh giản 11 frame thành low-fi trắng–xám, sửa thứ tự icon/nhãn bằng Auto Layout và đồng bộ nội dung trạng thái. Phạm vi chỉ trang 02 Wireframe; giữ IDs và vị trí 11 khung.
 - `fix-prototype.js`: nối Goal choices, inactive tabs, empty entry và native starting points.
 - `fix-screen-accessibility.js`: đồng bộ nội dung/state labels và thứ tự đọc; đổi PAGE_ID giữa Final UI/Prototype theo phạm vi.
 - `fix-noncolor-states.js`: dấu ✓ và text alternative của biểu đồ.
