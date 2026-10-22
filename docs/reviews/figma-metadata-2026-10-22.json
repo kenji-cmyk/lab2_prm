@@ -1,0 +1,504 @@
+{
+  "fileKey": "Cc2O3xSmxgjfvDI2hrsY3Q",
+  "reviewDate": "2026-10-22",
+  "source": "Read-only Figma MCP get_metadata on pages 2:2, 2:3, 2:5",
+  "limitations": [
+    "Metadata only; does not verify prototype reactions, token binding, public access or Present walkthrough.",
+    "design/figma-audit.json is an earlier snapshot; page 02 now contains 22 frames, including overlapping sets."
+  ],
+  "pages": [
+    {
+      "id": "2:2",
+      "frames": [
+        {
+          "id": "12:4",
+          "name": "WF 01 Chào mừng",
+          "x": 40,
+          "y": 144,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:12",
+          "name": "WF 02 Thiết lập mục tiêu",
+          "x": 460,
+          "y": 144,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:22",
+          "name": "WF 03 Trang chủ",
+          "x": 880,
+          "y": 144,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:32",
+          "name": "WF 04 Ghi bữa ăn",
+          "x": 40,
+          "y": 1074,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:41",
+          "name": "WF 05 Đang phân tích",
+          "x": 460,
+          "y": 1074,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:49",
+          "name": "WF 06 Kết quả",
+          "x": 880,
+          "y": 1074,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:58",
+          "name": "WF 07 Lỗi kết nối",
+          "x": 40,
+          "y": 2004,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:65",
+          "name": "WF 08 Nhật ký bữa ăn",
+          "x": 460,
+          "y": 2004,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:74",
+          "name": "WF 09 Nhật ký trống",
+          "x": 880,
+          "y": 2004,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:82",
+          "name": "WF 10 Tiến trình tuần",
+          "x": 40,
+          "y": 2934,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "12:96",
+          "name": "WF 11 Bài học nhỏ",
+          "x": 460,
+          "y": 2934,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:407",
+          "name": "WF — 01 Chào mừng",
+          "x": 24,
+          "y": 140,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:425",
+          "name": "WF — 02 Thiết lập mục tiêu",
+          "x": 432,
+          "y": 140,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:466",
+          "name": "WF — 03 Trang chủ",
+          "x": 840,
+          "y": 140,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:549",
+          "name": "WF — 04 Ghi bữa ăn",
+          "x": 24,
+          "y": 1012,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:596",
+          "name": "WF — 05 Đang phân tích",
+          "x": 432,
+          "y": 1012,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:631",
+          "name": "WF — 06 Kết quả",
+          "x": 840,
+          "y": 1012,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:666",
+          "name": "WF — 07 Lỗi kết nối",
+          "x": 24,
+          "y": 1884,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:696",
+          "name": "WF — 08 Nhật ký bữa ăn",
+          "x": 432,
+          "y": 1884,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:776",
+          "name": "WF — 09 Nhật ký trống",
+          "x": 840,
+          "y": 1884,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:856",
+          "name": "WF — 10 Tiến trình tuần",
+          "x": 24,
+          "y": 2756,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:947",
+          "name": "WF — 11 Bài học nhỏ",
+          "x": 432,
+          "y": 2756,
+          "width": 360,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "id": "2:3",
+      "frames": [
+        {
+          "id": "6:2",
+          "name": "01 Chào mừng",
+          "x": 24,
+          "y": 140,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:19",
+          "name": "02 Thiết lập mục tiêu",
+          "x": 456,
+          "y": 140,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:42",
+          "name": "03 Trang chủ",
+          "x": 888,
+          "y": 140,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:76",
+          "name": "04 Ghi bữa ăn",
+          "x": 24,
+          "y": 1080,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:101",
+          "name": "05 Đang phân tích",
+          "x": 456,
+          "y": 1080,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:118",
+          "name": "06 Kết quả",
+          "x": 888,
+          "y": 1080,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:138",
+          "name": "07 Lỗi kết nối",
+          "x": 24,
+          "y": 2020,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:155",
+          "name": "08 Nhật ký bữa ăn",
+          "x": 456,
+          "y": 2020,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:186",
+          "name": "09 Nhật ký trống",
+          "x": 888,
+          "y": 2020,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:213",
+          "name": "10 Tiến trình tuần",
+          "x": 24,
+          "y": 2960,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:257",
+          "name": "11 Bài học nhỏ",
+          "x": 456,
+          "y": 2960,
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "10:126",
+          "name": "Overlay — Xác nhận hủy bữa ăn",
+          "x": 1360,
+          "y": 140,
+          "width": 360,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "id": "2:5",
+      "frames": [
+        {
+          "id": "4:12",
+          "name": "Button",
+          "x": 24,
+          "y": 128,
+          "width": 352,
+          "height": 276
+        },
+        {
+          "id": "4:28",
+          "name": "Text Field",
+          "x": 400,
+          "y": 128,
+          "width": 352,
+          "height": 368
+        },
+        {
+          "id": "4:35",
+          "name": "Card",
+          "x": 800,
+          "y": 128,
+          "width": 352,
+          "height": 260
+        },
+        {
+          "id": "4:42",
+          "name": "Navigation Item",
+          "x": 24,
+          "y": 500,
+          "width": 114,
+          "height": 180
+        },
+        {
+          "id": "4:51",
+          "name": "App Bar",
+          "x": 400,
+          "y": 500,
+          "width": 352,
+          "height": 156
+        },
+        {
+          "id": "4:64",
+          "name": "Dialog",
+          "x": 800,
+          "y": 500,
+          "width": 344,
+          "height": 452
+        },
+        {
+          "id": "4:75",
+          "name": "Loading",
+          "x": 24,
+          "y": 860,
+          "width": 352,
+          "height": 316
+        },
+        {
+          "id": "4:84",
+          "name": "Empty State",
+          "x": 400,
+          "y": 860,
+          "width": 352,
+          "height": 380
+        },
+        {
+          "id": "4:93",
+          "name": "Error & Recovery",
+          "x": 800,
+          "y": 860,
+          "width": 352,
+          "height": 340
+        },
+        {
+          "id": "4:94",
+          "name": "Material 3 — thư viện nền được khảo sát",
+          "x": -9,
+          "y": 1355,
+          "width": 1200,
+          "height": 560
+        },
+        {
+          "id": "25:95",
+          "name": "Navigation Icons",
+          "x": 24,
+          "y": 720,
+          "width": 152,
+          "height": 72
+        }
+      ],
+      "variants": [
+        {
+          "id": "4:4",
+          "name": "State=Default"
+        },
+        {
+          "id": "4:6",
+          "name": "State=Focused"
+        },
+        {
+          "id": "4:8",
+          "name": "State=Loading"
+        },
+        {
+          "id": "4:10",
+          "name": "State=Disabled"
+        },
+        {
+          "id": "4:13",
+          "name": "State=Default"
+        },
+        {
+          "id": "4:18",
+          "name": "State=Focused"
+        },
+        {
+          "id": "4:23",
+          "name": "State=Error"
+        },
+        {
+          "id": "4:29",
+          "name": "State=Default"
+        },
+        {
+          "id": "4:32",
+          "name": "State=Selected"
+        },
+        {
+          "id": "4:36",
+          "name": "State=Selected"
+        },
+        {
+          "id": "4:39",
+          "name": "State=Unselected"
+        },
+        {
+          "id": "4:43",
+          "name": "State=Root"
+        },
+        {
+          "id": "4:47",
+          "name": "State=Back"
+        },
+        {
+          "id": "4:52",
+          "name": "State=Open"
+        },
+        {
+          "id": "4:58",
+          "name": "State=Confirmed"
+        },
+        {
+          "id": "4:65",
+          "name": "State=Processing"
+        },
+        {
+          "id": "4:70",
+          "name": "State=Complete"
+        },
+        {
+          "id": "4:76",
+          "name": "State=No meals"
+        },
+        {
+          "id": "4:80",
+          "name": "State=No results"
+        },
+        {
+          "id": "4:85",
+          "name": "State=Offline"
+        },
+        {
+          "id": "4:89",
+          "name": "State=Retrying"
+        },
+        {
+          "id": "25:79",
+          "name": "Icon=Home, State=Selected"
+        },
+        {
+          "id": "25:81",
+          "name": "Icon=Home, State=Unselected"
+        },
+        {
+          "id": "25:83",
+          "name": "Icon=Journal, State=Selected"
+        },
+        {
+          "id": "25:85",
+          "name": "Icon=Journal, State=Unselected"
+        },
+        {
+          "id": "25:87",
+          "name": "Icon=Progress, State=Selected"
+        },
+        {
+          "id": "25:89",
+          "name": "Icon=Progress, State=Unselected"
+        },
+        {
+          "id": "25:91",
+          "name": "Icon=Learn, State=Selected"
+        },
+        {
+          "id": "25:93",
+          "name": "Icon=Learn, State=Unselected"
+        }
+      ]
+    }
+  ]
+}

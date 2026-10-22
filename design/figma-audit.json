@@ -1,0 +1,1799 @@
+{
+  "fileKey": "Cc2O3xSmxgjfvDI2hrsY3Q",
+  "reviewDate": "2026-10-22",
+  "expectedPages": [
+    "01 User Flow",
+    "02 Wireframe",
+    "03 Final UI",
+    "04 Design System",
+    "05 Components",
+    "06 Prototype"
+  ],
+  "pages": [
+    {
+      "id": "0:1",
+      "name": "01 User Flow",
+      "frames": [
+        {
+          "id": "12:203",
+          "name": "Persona — Minh",
+          "width": 360,
+          "height": 276
+        },
+        {
+          "id": "12:206",
+          "name": "Problem statement & success",
+          "width": 748,
+          "height": 276
+        },
+        {
+          "id": "12:211",
+          "name": "Flow card — Flow 1 · Bắt đầu",
+          "width": 356,
+          "height": 620
+        },
+        {
+          "id": "12:222",
+          "name": "Flow card — Flow 2 · Ghi bữa ăn",
+          "width": 356,
+          "height": 620
+        },
+        {
+          "id": "12:241",
+          "name": "Flow card — Flow 3 · Theo dõi & học",
+          "width": 356,
+          "height": 620
+        }
+      ]
+    },
+    {
+      "id": "2:2",
+      "name": "02 Wireframe",
+      "frames": [
+        {
+          "id": "52:407",
+          "name": "WF — 01 Chào mừng",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:425",
+          "name": "WF — 02 Thiết lập mục tiêu",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:466",
+          "name": "WF — 03 Trang chủ",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:549",
+          "name": "WF — 04 Ghi bữa ăn",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:596",
+          "name": "WF — 05 Đang phân tích",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:631",
+          "name": "WF — 06 Kết quả",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:666",
+          "name": "WF — 07 Lỗi kết nối",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:696",
+          "name": "WF — 08 Nhật ký bữa ăn",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:776",
+          "name": "WF — 09 Nhật ký trống",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:856",
+          "name": "WF — 10 Tiến trình tuần",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "52:947",
+          "name": "WF — 11 Bài học nhỏ",
+          "width": 360,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "id": "2:3",
+      "name": "03 Final UI",
+      "frames": [
+        {
+          "id": "6:2",
+          "name": "01 Chào mừng",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:19",
+          "name": "02 Thiết lập mục tiêu",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:42",
+          "name": "03 Trang chủ",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:76",
+          "name": "04 Ghi bữa ăn",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:101",
+          "name": "05 Đang phân tích",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:118",
+          "name": "06 Kết quả",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:138",
+          "name": "07 Lỗi kết nối",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:155",
+          "name": "08 Nhật ký bữa ăn",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:186",
+          "name": "09 Nhật ký trống",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:213",
+          "name": "10 Tiến trình tuần",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "6:257",
+          "name": "11 Bài học nhỏ",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "10:126",
+          "name": "Overlay — Xác nhận hủy bữa ăn",
+          "width": 360,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "id": "2:4",
+      "name": "04 Design System",
+      "frames": [
+        {
+          "id": "12:109",
+          "name": "Swatch — Brand / Primary",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:112",
+          "name": "Swatch — On primary",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:115",
+          "name": "Swatch — Primary container",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:118",
+          "name": "Swatch — On container",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:121",
+          "name": "Swatch — Canvas",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:124",
+          "name": "Swatch — Surface",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:127",
+          "name": "Swatch — Text / primary",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:130",
+          "name": "Swatch — Text / secondary",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:133",
+          "name": "Swatch — Border",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:136",
+          "name": "Swatch — Error",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:139",
+          "name": "Swatch — Error container",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:142",
+          "name": "Swatch — Success",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:145",
+          "name": "Swatch — Accent / peach",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:148",
+          "name": "Swatch — Accent / sky",
+          "width": 248,
+          "height": 56
+        },
+        {
+          "id": "12:166",
+          "name": "Spacing sample 4",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "id": "12:168",
+          "name": "Spacing sample 8",
+          "width": 32,
+          "height": 16
+        },
+        {
+          "id": "12:170",
+          "name": "Spacing sample 12",
+          "width": 48,
+          "height": 16
+        },
+        {
+          "id": "12:172",
+          "name": "Spacing sample 16",
+          "width": 64,
+          "height": 16
+        },
+        {
+          "id": "12:174",
+          "name": "Spacing sample 24",
+          "width": 96,
+          "height": 16
+        },
+        {
+          "id": "12:176",
+          "name": "Spacing sample 32",
+          "width": 128,
+          "height": 16
+        },
+        {
+          "id": "12:178",
+          "name": "Radius sample radius/small",
+          "width": 116,
+          "height": 36
+        },
+        {
+          "id": "12:180",
+          "name": "Radius sample radius/medium",
+          "width": 116,
+          "height": 36
+        },
+        {
+          "id": "12:182",
+          "name": "Radius sample radius/large",
+          "width": 116,
+          "height": 36
+        },
+        {
+          "id": "12:184",
+          "name": "Radius sample radius/pill",
+          "width": 116,
+          "height": 36
+        },
+        {
+          "id": "12:186",
+          "name": "Elevation sample",
+          "width": 220,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "id": "2:5",
+      "name": "05 Components",
+      "frames": [
+        {
+          "id": "4:94",
+          "name": "Material 3 — thư viện nền được khảo sát",
+          "width": 1200,
+          "height": 560
+        }
+      ]
+    },
+    {
+      "id": "2:6",
+      "name": "06 Prototype",
+      "frames": [
+        {
+          "id": "13:373",
+          "name": "Prototype launch — Flow 1 · Bắt đầu thói quen",
+          "width": 356,
+          "height": 230
+        },
+        {
+          "id": "13:378",
+          "name": "Prototype launch — Flow 2 · Ghi bữa ăn",
+          "width": 356,
+          "height": 230
+        },
+        {
+          "id": "13:383",
+          "name": "Prototype launch — Flow 3 · Theo dõi & học",
+          "width": 356,
+          "height": 230
+        },
+        {
+          "id": "13:412",
+          "name": "Responsive handoff",
+          "width": 280,
+          "height": 192
+        },
+        {
+          "id": "13:415",
+          "name": "AI process status",
+          "width": 280,
+          "height": 224
+        },
+        {
+          "id": "13:418",
+          "name": "PROTO — 01 Chào mừng",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:434",
+          "name": "PROTO — 02 Thiết lập mục tiêu",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:447",
+          "name": "PROTO — 03 Trang chủ",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:465",
+          "name": "PROTO — 04 Ghi bữa ăn",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:476",
+          "name": "PROTO — 05 Đang phân tích",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:485",
+          "name": "PROTO — 06 Kết quả",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:497",
+          "name": "PROTO — 07 Lỗi kết nối",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:507",
+          "name": "PROTO — 08 Nhật ký bữa ăn",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:522",
+          "name": "PROTO — 09 Nhật ký trống",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:534",
+          "name": "PROTO — 10 Tiến trình tuần",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:563",
+          "name": "PROTO — 11 Bài học nhỏ",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "13:579",
+          "name": "PROTO — Overlay xác nhận hủy",
+          "width": 360,
+          "height": 800
+        },
+        {
+          "id": "16:164",
+          "name": "RESP — 03 Trang chủ · 412dp",
+          "width": 412,
+          "height": 800
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "4:12",
+      "name": "Button",
+      "variants": [
+        {
+          "id": "4:4",
+          "name": "State=Default"
+        },
+        {
+          "id": "4:6",
+          "name": "State=Focused"
+        },
+        {
+          "id": "4:8",
+          "name": "State=Loading"
+        },
+        {
+          "id": "4:10",
+          "name": "State=Disabled"
+        }
+      ]
+    },
+    {
+      "id": "4:28",
+      "name": "Text Field",
+      "variants": [
+        {
+          "id": "4:13",
+          "name": "State=Default"
+        },
+        {
+          "id": "4:18",
+          "name": "State=Focused"
+        },
+        {
+          "id": "4:23",
+          "name": "State=Error"
+        }
+      ]
+    },
+    {
+      "id": "4:35",
+      "name": "Card",
+      "variants": [
+        {
+          "id": "4:29",
+          "name": "State=Default"
+        },
+        {
+          "id": "4:32",
+          "name": "State=Selected"
+        }
+      ]
+    },
+    {
+      "id": "4:42",
+      "name": "Navigation Item",
+      "variants": [
+        {
+          "id": "4:36",
+          "name": "State=Selected"
+        },
+        {
+          "id": "4:39",
+          "name": "State=Unselected"
+        }
+      ]
+    },
+    {
+      "id": "4:51",
+      "name": "App Bar",
+      "variants": [
+        {
+          "id": "4:43",
+          "name": "State=Root"
+        },
+        {
+          "id": "4:47",
+          "name": "State=Back"
+        }
+      ]
+    },
+    {
+      "id": "4:64",
+      "name": "Dialog",
+      "variants": [
+        {
+          "id": "4:52",
+          "name": "State=Open"
+        },
+        {
+          "id": "4:58",
+          "name": "State=Confirmed"
+        }
+      ]
+    },
+    {
+      "id": "4:75",
+      "name": "Loading",
+      "variants": [
+        {
+          "id": "4:65",
+          "name": "State=Processing"
+        },
+        {
+          "id": "4:70",
+          "name": "State=Complete"
+        }
+      ]
+    },
+    {
+      "id": "4:84",
+      "name": "Empty State",
+      "variants": [
+        {
+          "id": "4:76",
+          "name": "State=No meals"
+        },
+        {
+          "id": "4:80",
+          "name": "State=No results"
+        }
+      ]
+    },
+    {
+      "id": "4:93",
+      "name": "Error & Recovery",
+      "variants": [
+        {
+          "id": "4:85",
+          "name": "State=Offline"
+        },
+        {
+          "id": "4:89",
+          "name": "State=Retrying"
+        }
+      ]
+    },
+    {
+      "id": "25:95",
+      "name": "Navigation Icons",
+      "variants": [
+        {
+          "id": "25:79",
+          "name": "Icon=Home, State=Selected"
+        },
+        {
+          "id": "25:81",
+          "name": "Icon=Home, State=Unselected"
+        },
+        {
+          "id": "25:83",
+          "name": "Icon=Journal, State=Selected"
+        },
+        {
+          "id": "25:85",
+          "name": "Icon=Journal, State=Unselected"
+        },
+        {
+          "id": "25:87",
+          "name": "Icon=Progress, State=Selected"
+        },
+        {
+          "id": "25:89",
+          "name": "Icon=Progress, State=Unselected"
+        },
+        {
+          "id": "25:91",
+          "name": "Icon=Learn, State=Selected"
+        },
+        {
+          "id": "25:93",
+          "name": "Icon=Learn, State=Unselected"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "id": "VariableID:2:8",
+      "name": "color/brand/primary",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.18431372940540314,
+          "g": 0.41960784792900085,
+          "b": 0.30980393290519714,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:9",
+      "name": "color/brand/on-primary",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:10",
+      "name": "color/brand/primary-container",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.8823529481887817,
+          "g": 0.9450980424880981,
+          "b": 0.9019607901573181,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:11",
+      "name": "color/brand/on-primary-container",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.0941176488995552,
+          "g": 0.239215686917305,
+          "b": 0.1764705926179886,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:12",
+      "name": "color/surface/canvas",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.9686274528503418,
+          "g": 0.9725490212440491,
+          "b": 0.95686274766922,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:13",
+      "name": "color/surface/default",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:14",
+      "name": "color/text/primary",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.12156862765550613,
+          "g": 0.16862745583057404,
+          "b": 0.1411764770746231,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:15",
+      "name": "color/text/secondary",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.32156863808631897,
+          "g": 0.3843137323856354,
+          "b": 0.3450980484485626,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:16",
+      "name": "color/border/default",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.8392156958580017,
+          "g": 0.8745098114013672,
+          "b": 0.843137264251709,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:17",
+      "name": "color/state/error",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.6431372761726379,
+          "g": 0.14901961386203766,
+          "b": 0.11372549086809158,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:18",
+      "name": "color/state/error-container",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.9764705896377563,
+          "g": 0.8705882430076599,
+          "b": 0.8627451062202454,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:19",
+      "name": "color/state/success",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.09803921729326248,
+          "g": 0.42352941632270813,
+          "b": 0.27450981736183167,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:20",
+      "name": "color/accent/peach",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.95686274766922,
+          "g": 0.8941176533699036,
+          "b": 0.8235294222831726,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:21",
+      "name": "color/accent/sky",
+      "type": "COLOR",
+      "values": {
+        "2:0": {
+          "r": 0.9019607901573181,
+          "g": 0.9333333373069763,
+          "b": 0.9725490212440491,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:2:22",
+      "name": "space/4",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 4
+      }
+    },
+    {
+      "id": "VariableID:2:23",
+      "name": "space/8",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 8
+      }
+    },
+    {
+      "id": "VariableID:2:24",
+      "name": "space/12",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 12
+      }
+    },
+    {
+      "id": "VariableID:2:25",
+      "name": "space/16",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 16
+      }
+    },
+    {
+      "id": "VariableID:2:26",
+      "name": "space/24",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 24
+      }
+    },
+    {
+      "id": "VariableID:2:27",
+      "name": "space/32",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 32
+      }
+    },
+    {
+      "id": "VariableID:2:28",
+      "name": "radius/small",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 8
+      }
+    },
+    {
+      "id": "VariableID:2:29",
+      "name": "radius/medium",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 12
+      }
+    },
+    {
+      "id": "VariableID:2:30",
+      "name": "radius/large",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 20
+      }
+    },
+    {
+      "id": "VariableID:2:31",
+      "name": "radius/pill",
+      "type": "FLOAT",
+      "values": {
+        "2:0": 999
+      }
+    }
+  ],
+  "fonts": [
+    "Roboto"
+  ],
+  "boundNodeCount": 164,
+  "boundPaintCount": 174,
+  "textStyles": [
+    {
+      "id": "S:6038d03f96d8e78887513b5ea11d4a8d86f4b38a,",
+      "name": "Type/Display"
+    },
+    {
+      "id": "S:d4823a4c1733d3b2efc8f5729eb38cb3f748ca68,",
+      "name": "Type/Headline"
+    },
+    {
+      "id": "S:fe7b921d926324a139cb8ba81bc965b8bc8cb6ca,",
+      "name": "Type/Title"
+    },
+    {
+      "id": "S:e6f7aaeb6cf486454680151af9f12778621bc94d,",
+      "name": "Type/Body"
+    },
+    {
+      "id": "S:1a4ee89da549541c4d1949a3b2c9a4fbc09d7bcf,",
+      "name": "Type/Body Small"
+    },
+    {
+      "id": "S:c29ea411e979863deebf6f175027f19b60bed63e,",
+      "name": "Type/Label"
+    },
+    {
+      "id": "S:2136eae0b62c74ac122da53ba4da7fac3c0c6077,",
+      "name": "Type/Label Bold"
+    }
+  ],
+  "effectStyles": [
+    {
+      "id": "S:57bdac840152833dc8b672d68fc0bbb5c819b302,",
+      "name": "Elevation/Level 1"
+    }
+  ],
+  "reactionCount": 32,
+  "destinationCount": 31,
+  "missingDestinations": [],
+  "undersizedClickTargets": [],
+  "reactions": [
+    {
+      "sourceNodeId": "13:376",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:373",
+        "name": "Prototype launch — Flow 1 · Bắt đầu thói quen"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:418",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:381",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:378",
+        "name": "Prototype launch — Flow 2 · Ghi bữa ăn"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:447",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:386",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:383",
+        "name": "Prototype launch — Flow 3 · Theo dõi & học"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:447",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:431",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:418",
+        "name": "PROTO — 01 Chào mừng"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:434",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:436",
+      "sourceName": "App Bar",
+      "sourceScreen": {
+        "id": "13:434",
+        "name": "PROTO — 02 Thiết lập mục tiêu"
+      },
+      "width": 320,
+      "height": 56,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:418",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:444",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:434",
+        "name": "PROTO — 02 Thiết lập mục tiêu"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:447",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:457",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:447",
+        "name": "PROTO — 03 Trang chủ"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:465",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:461",
+      "sourceName": "Navigation Item",
+      "sourceScreen": {
+        "id": "13:447",
+        "name": "PROTO — 03 Trang chủ"
+      },
+      "width": 82,
+      "height": 68,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:507",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:462",
+      "sourceName": "Navigation Item",
+      "sourceScreen": {
+        "id": "13:447",
+        "name": "PROTO — 03 Trang chủ"
+      },
+      "width": 82,
+      "height": 68,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:534",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:463",
+      "sourceName": "Navigation Item",
+      "sourceScreen": {
+        "id": "13:447",
+        "name": "PROTO — 03 Trang chủ"
+      },
+      "width": 82,
+      "height": 68,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:563",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:467",
+      "sourceName": "App Bar",
+      "sourceScreen": {
+        "id": "13:465",
+        "name": "PROTO — 04 Ghi bữa ăn"
+      },
+      "width": 320,
+      "height": 56,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:579",
+        "navigation": "OVERLAY",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:472",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:465",
+        "name": "PROTO — 04 Ghi bữa ăn"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:476",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:473",
+      "sourceName": "Offline simulation link",
+      "sourceScreen": {
+        "id": "13:465",
+        "name": "PROTO — 04 Ghi bữa ăn"
+      },
+      "width": 320,
+      "height": 48,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:497",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:476",
+      "sourceName": "PROTO — 05 Đang phân tích",
+      "sourceScreen": {
+        "id": "13:476",
+        "name": "PROTO — 05 Đang phân tích"
+      },
+      "width": 360,
+      "height": 800,
+      "trigger": {
+        "type": "AFTER_TIMEOUT",
+        "timeout": 1300
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:485",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:478",
+      "sourceName": "App Bar",
+      "sourceScreen": {
+        "id": "13:476",
+        "name": "PROTO — 05 Đang phân tích"
+      },
+      "width": 320,
+      "height": 56,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:465",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:483",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:476",
+        "name": "PROTO — 05 Đang phân tích"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:465",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:487",
+      "sourceName": "App Bar",
+      "sourceScreen": {
+        "id": "13:485",
+        "name": "PROTO — 06 Kết quả"
+      },
+      "width": 320,
+      "height": 56,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:465",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:493",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:485",
+        "name": "PROTO — 06 Kết quả"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:507",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:494",
+      "sourceName": "Edit action",
+      "sourceScreen": {
+        "id": "13:485",
+        "name": "PROTO — 06 Kết quả"
+      },
+      "width": 320,
+      "height": 48,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:465",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:499",
+      "sourceName": "App Bar",
+      "sourceScreen": {
+        "id": "13:497",
+        "name": "PROTO — 07 Lỗi kết nối"
+      },
+      "width": 320,
+      "height": 56,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:465",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:503",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:497",
+        "name": "PROTO — 07 Lỗi kết nối"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:476",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:504",
+      "sourceName": "Offline back action",
+      "sourceScreen": {
+        "id": "13:497",
+        "name": "PROTO — 07 Lỗi kết nối"
+      },
+      "width": 320,
+      "height": 48,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:465",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:515",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:507",
+        "name": "PROTO — 08 Nhật ký bữa ăn"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:465",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:517",
+      "sourceName": "Navigation Item",
+      "sourceScreen": {
+        "id": "13:507",
+        "name": "PROTO — 08 Nhật ký bữa ăn"
+      },
+      "width": 82,
+      "height": 68,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:447",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:527",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:522",
+        "name": "PROTO — 09 Nhật ký trống"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:465",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:529",
+      "sourceName": "Navigation Item",
+      "sourceScreen": {
+        "id": "13:522",
+        "name": "PROTO — 09 Nhật ký trống"
+      },
+      "width": 82,
+      "height": 68,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:447",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:556",
+      "sourceName": "Weekly learning link",
+      "sourceScreen": {
+        "id": "13:534",
+        "name": "PROTO — 10 Tiến trình tuần"
+      },
+      "width": 320,
+      "height": 48,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:563",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:558",
+      "sourceName": "Navigation Item",
+      "sourceScreen": {
+        "id": "13:534",
+        "name": "PROTO — 10 Tiến trình tuần"
+      },
+      "width": 82,
+      "height": 68,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:447",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:565",
+      "sourceName": "App Bar",
+      "sourceScreen": {
+        "id": "13:563",
+        "name": "PROTO — 11 Bài học nhỏ"
+      },
+      "width": 320,
+      "height": 56,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:534",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:572",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:563",
+        "name": "PROTO — 11 Bài học nhỏ"
+      },
+      "width": 320,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:534",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    },
+    {
+      "sourceNodeId": "13:583",
+      "sourceName": "Button",
+      "sourceScreen": {
+        "id": "13:579",
+        "name": "PROTO — Overlay xác nhận hủy"
+      },
+      "width": 288,
+      "height": 52,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "CLOSE"
+      }
+    },
+    {
+      "sourceNodeId": "13:584",
+      "sourceName": "Hủy bữa ăn — action",
+      "sourceScreen": {
+        "id": "13:579",
+        "name": "PROTO — Overlay xác nhận hủy"
+      },
+      "width": 288,
+      "height": 48,
+      "trigger": {
+        "type": "ON_CLICK"
+      },
+      "action": {
+        "type": "NODE",
+        "destinationId": "13:447",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.20000000298023224
+        },
+        "resetVideoPosition": false
+      }
+    }
+  ],
+  "limitations": [
+    "Static plugin API audit, not a live Present walkthrough",
+    "Wireframes reconstructed after Final UI on 2026-10-22",
+    "Google Stitch evidence is absent"
+  ]
+}
